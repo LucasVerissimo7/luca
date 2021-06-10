@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -181,9 +183,9 @@ animation: fadeIn 1s ease-in-out;
     }
     
     .h1-ar2 {
-        font-size: 4em;
+        font-size: 3.5em;
         font-weight: 700;
-        font-family: 'Baloo Tammudu 2', cursive;
+        font-family: 'Roboto Slab', serif;
         margin-bottom: 10px;
         color: #3a3a3a;
     }
@@ -223,16 +225,18 @@ animation: fadeIn 1s ease-in-out;
     }
     
     .h4-bold {
-        font-weight: 700;
+        font-weight: 500;
         margin-top: 10px;
-        font-size: 1.2em;
-        color: #f6abc9;
+        font-family: 'Roboto Slab', serif;
+        font-size: 1.6em;
+        color: #ffffff;
         font-size: 15px;
     }
     
     .h4 {
         line-height: 20px;
     }
+
 /*-------------------------- DEPOIMENTOS ----------------------------------*/
 
 /*-------------------------- SERVIÇOS ----------------------------------*/
@@ -278,10 +282,11 @@ animation: fadeIn 1s ease-in-out;
     width: 250px;
     height: 300px;
     margin: 10px;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    justify-content: end;
+    align-self: end;
     border-radius: 50px 0 0 0;
+    position: relative;
 }
 
 .masso {
@@ -296,6 +301,7 @@ animation: fadeIn 1s ease-in-out;
     flex-direction: column;
     justify-content: end;
     border-radius: 50px 0 0 0;
+    position: relative;
 }
 
 .eletro {
@@ -310,6 +316,7 @@ animation: fadeIn 1s ease-in-out;
     flex-direction: column;
     justify-content: end;
     border-radius: 50px 0 0 0;
+    position: relative;
 }
 
 .libera {
@@ -324,6 +331,7 @@ animation: fadeIn 1s ease-in-out;
     flex-direction: column;
     justify-content: end;
     border-radius: 50px 0 0 0;
+    position: relative;
 }
 
 .ventosa:hover {
@@ -366,7 +374,10 @@ animation: fadeIn 1s ease-in-out;
 .texto {
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.774));
     padding: 15px;
-    align-items: baseline;
+    width: 220px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .h3-ar3 {
@@ -423,8 +434,7 @@ animation: fadeIn 1s ease-in-out;
     background: #f5f5f5;
     box-shadow: 0 2px 15px 0 rgba(0,0,0,.15);
     border-radius: 15px;
-    width: 318px;
-    height: 430px;
+    padding-bottom: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -438,6 +448,18 @@ animation: fadeIn 1s ease-in-out;
 
 .list {
     list-style: none;
+    text-align: center;
+}
+
+.list li {
+    border-bottom: solid 1px rgba(151, 151, 151, 0.171);
+    margin: 5px;
+}
+
+.cinza {
+    color: rgb(151, 151, 151);
+    font-weight: 800;
+    font-style: italic;
 }
 
 .antes {
@@ -449,9 +471,10 @@ animation: fadeIn 1s ease-in-out;
 }
 .economize {
     margin: 3px;
-    background: #f6abc9;
+    background: #fc8ab7;
     color: white;
     font-weight: 800;
+    font-style: italic;
     padding: 5px 8px 5px 8px;
     border-radius: 15px;
     font-family: Arial, Helvetica, sans-serif;
@@ -528,7 +551,7 @@ animation: fadeIn 1s ease-in-out;
     display: flex;
     justify-content: space-around;
     background: rgb(22, 22, 22);
-    padding: 10px 0 60px 0;
+    padding: 10px 0 10px 0;
     height: 100%;
     width: 100%;
 }
@@ -646,7 +669,6 @@ animation: fadeIn 1s ease-in-out;
             font-size: 3em;
             font-weight: 600;
             margin-bottom: 10px;
-            line-height: 10px;
         }
 
     .preco {
