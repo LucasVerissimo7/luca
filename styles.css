@@ -1,0 +1,844 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+a {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+html body {
+    height: 100%;
+    font-size: 12px;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+
+/* ------------------- ANIMAÇÕES ------------------- */
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+    }
+    @-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+    }
+    @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+
+/* ------------------- ANIMAÇÕES ------------------- */
+
+
+
+
+    /* ------------------- HEADER ------------------- */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 15px 0 15px 0;
+    background-image: url("img/massoterapia.png");
+    background-color: #0003b6; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: top; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-attachment: fixed;
+}
+
+
+.logo-header {
+    width: 400px;
+    margin-top: 80px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+
+    
+}
+
+.nav {
+    display: flex;
+}
+
+.text-header{
+    margin-top: 55px;
+    transition: 1s;
+}
+
+.text-header a{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    background: #f17baa;
+    border: #f6abc9 solid 2px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 0 15px 0 15px;
+}
+
+.text-header a:hover {
+    color: #ffffff;
+    background: #da5a8b;
+    box-shadow: rgba(255, 255, 255, 0.418) 0px 0px 20px;
+    transition-duration: 300ms;
+}
+
+.link-nav {
+    margin-left: 50px;
+    list-style: none;
+    font-weight: 700;
+}
+
+.link-nav-cont a {
+    margin: 0 60px 0 60px;
+    padding: 5px 20px 5px 20px;
+    border:rgb(255, 255, 255) solid 2px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255)
+}
+
+.link-nav-cont a:hover {
+    background: #f6abc9;
+    border:#f6abc9 solid 2px;
+    transition-duration: 300ms;
+    color: rgb(0, 47, 255);
+}
+
+.link-nav:hover {
+    color: white;
+    transition-duration: 400ms;
+}
+
+/* -------------------------- HEADER ------------------------------------ */
+
+
+
+/*-------------------------- SOBRE MIM ----------------------------------*/
+
+.AR1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-image: linear-gradient(90deg, #ececec, #fcfcfc);
+}
+
+.foto {
+    width: 500px;
+}
+
+.text-AR1 {
+    max-width: 70vh;
+    text-align: justify;
+    margin-left: 30px;
+    line-height: 10px;
+}
+
+.h1-AR1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #3a3a3a;
+    border-bottom: #3a3a3a solid 3px;
+}
+
+.h3-AR1 {
+    font-size: 1.2em;
+    margin-top: 15px;
+    color: #3f3f3f;
+    font-style: italic;
+    line-height: 25px;
+}
+/*-------------------------- SOBRE MIM ----------------------------------*/
+
+
+
+/*-------------------------- DEPOIMENTOS ----------------------------------*/
+
+.AR2 {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 25px;
+    height: 100%;
+
+
+    -webkit-animation: fadeIn 1s ease-in-out;
+-moz-animation: fadeIn 1s ease-in-out;
+-o-animation: fadeIn 1s ease-in-out;
+animation: fadeIn 1s ease-in-out;
+    }
+    
+    .h1-ar2 {
+        font-size: 4em;
+        font-weight: 700;
+        font-family: 'Baloo Tammudu 2', cursive;
+        margin-bottom: 10px;
+        color: #3a3a3a;
+    }
+    .AR2-depo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+        margin-top: 40px;
+    }
+    .depoimg {
+        border-radius: 200px;
+        width: 150px;
+        margin-bottom: -60px;
+        border: #ffffff solid 12px;
+
+    }
+    .depoimentos {
+        width: 250px;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+
+    }
+    
+    
+    .textodep {
+     color: rgb(255, 255, 255);
+     text-align: center;
+     margin-top: 10px;
+     user-select: none;
+     font-family: 'Ubuntu', sans-serif;
+     font-size: 13px;
+     background: #166beb;
+     padding: 70px 30px 30px 30px;
+     font-style: italic;
+     border-radius: 20px;
+    }
+    
+    .h4-bold {
+        font-weight: 700;
+        margin-top: 10px;
+        font-size: 1.2em;
+        color: #f6abc9;
+        font-size: 15px;
+    }
+    
+    .h4 {
+        line-height: 20px;
+    }
+/*-------------------------- DEPOIMENTOS ----------------------------------*/
+
+/*-------------------------- SERVIÇOS ----------------------------------*/
+.AR3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+    padding: 30px 0 30px 0;
+}
+.venda {
+    display: flex;
+    place-items: center;
+}
+
+.h1-ar3-top{
+    font-size: 3em;
+    font-weight: 800;
+    color: #222222;
+}
+.servicos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.um {
+    display: flex;
+    flex-direction: row;
+}
+
+.dois {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.ventosa {
+    background-image: url(img/Ventosaterapia.jpg);
+    background-position: top; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 50px 0 0 0;
+}
+
+.masso {
+    background-image: url(img/massoterapia.jpg);
+    background-position: top; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 50px 0 0 0;
+}
+
+.eletro {
+    background-image: url(img/tens.jpg);
+    background-position: top; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 50px 0 0 0;
+}
+
+.libera {
+    background-image: url(img/liberacao.jpeg);
+    background-position: top; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 50px 0 0 0;
+}
+
+.ventosa:hover {
+    background-size: 150%;
+    transition-duration: 700ms;
+    background-position:bottom;
+}
+
+.masso:hover {
+    background-size: 200%;
+    transition-duration: 700ms;
+    background-position:bottom;
+}
+
+.eletro:hover {
+    background-size: 200%;
+    transition-duration: 700ms;
+    background-position:bottom;
+}
+
+.libera:hover {
+    background-size: 200%;
+    transition-duration: 700ms;
+    background-position:bottom;
+}
+
+.h1-ar3 {
+    font-size: 2.3em;
+    font-weight: 700;
+    font-family: 'Baloo Tammudu 2', cursive;
+    line-height: 15px;
+    color: #ffffff;
+    text-shadow: rgb(0, 0, 0) 0px 0px 20px;
+    -webkit-animation: fadeIn 1s ease-in-out;
+    -moz-animation: fadeIn 1s ease-in-out;
+    -o-animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+
+}
+.texto {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.774));
+    padding: 15px;
+    align-items: baseline;
+}
+
+.h3-ar3 {
+    font-size: 1em;
+    font-weight: 300;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #ffffff;
+    text-shadow: rgb(0, 0, 0) 0px 0px 20px;
+    -webkit-animation: fadeIn 1s ease-in-out;
+    -moz-animation: fadeIn 1s ease-in-out;
+    -o-animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.btn-ar3{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    background: #166beb;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+    margin: 30px;
+}
+
+.btn-ar3:hover {
+    color: #ffffff;
+    box-shadow: #166beb85 0px 0px 20px;
+    transition-duration: 300ms;
+}
+
+.home {
+    background:#166beb;
+    border-radius: 15px 15px 0 0 ;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    color: white;
+}
+
+.lista {
+    margin: 15px;
+    color:rgb(102, 102, 102);
+}
+
+.valor {
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.preco {
+    background: #f5f5f5;
+    box-shadow: 0 2px 15px 0 rgba(0,0,0,.15);
+    border-radius: 15px;
+    width: 318px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+}
+
+.title-preco {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.list {
+    list-style: none;
+}
+
+.antes {
+    color:rgb(151, 151, 151);
+    font-weight: 600;
+    font-size: 1.2em;
+    text-decoration: line-through;
+    margin: 3px;
+}
+.economize {
+    margin: 3px;
+    background: #f6abc9;
+    color: white;
+    font-weight: 800;
+    padding: 5px 8px 5px 8px;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.valor-atual {
+    color:rgb(61, 61, 61);
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin: 15px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.depois {
+    color: #166beb;
+    font-weight: 700;
+    font-size: 2em;
+}
+.grande {
+    font-size: 3.2em;
+}
+
+    /* ------------------- RODAPÉ ------------------- */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.juli{
+    background-color: rgb(34, 34, 34);
+    width: 100%;
+}
+
+.logo-jm {
+    width: 200px;
+}
+
+.menurodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 1em;
+    user-select: none;
+}
+
+.navrodape {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+.linkmenuroda {
+    color: #fff;
+    font-weight: 300;
+    margin: 0 10px 0 10px;
+    justify-items: center;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.linkmenuroda a {
+    text-decoration: none;
+}
+
+.roda {
+    display: flex;
+    justify-content: space-around;
+    background: rgb(22, 22, 22);
+    padding: 10px 0 60px 0;
+    height: 100%;
+    width: 100%;
+}
+
+.direitos {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    font-size: 1.1em;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(170, 170, 170);
+    font-style: italic;
+}
+
+.logorodape {
+    width: 60px;
+    user-select: none;
+    margin-left: 8px;
+}
+
+    /* ------------------- RODAPÉ ------------------- */
+
+/* ------------------- RESPONSIVIDADE ------------------- */
+
+
+
+
+@media only screen and (max-width: 900px) {
+    header {    
+        height: 500px;
+    }
+        
+    .logo-header {
+        width: 60vw;
+        margin-top: 70px;
+    }
+    
+    .menu {
+        display: flex;
+        align-items: center;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.3em;
+    }
+
+    
+    .nav {
+        display: flex;
+    }
+    
+    .link-nav {
+        margin-left: 20px;
+        list-style: none;
+        font-weight: 700;
+    }
+
+    .link-nav-cont {
+        font-size: 1em;
+        font-weight: 700;
+    }
+    
+    .link-nav-cont a {
+        margin: 0 20px 0 20px;
+    }
+
+    .text-header a{
+        font-size: 1.4em;
+        padding: 10px 20px 10px 20px;
+    }
+    
+    
+    /* --- ^ Header ^ --- */
+
+    .AR1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 900px;
+        background-image: linear-gradient(90deg, #ececec, #fcfcfc);
+    }
+    
+    .foto {
+        width: 80vw;
+    }
+    
+    .text-AR1 {
+        max-width: 75%;
+        margin-left: 0;
+    }
+    
+    /* --- ^ Sobre Mim ^ --- */
+
+    .venda {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+    .um {
+        flex-direction: column;
+    }
+    .dois {
+        flex-direction: column;
+    }
+
+    
+    /* --- ^ Venda ^ --- */
+
+    .AR2-depo {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        }
+        
+        .h1-ar2 {
+            font-size: 3em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            line-height: 10px;
+        }
+
+    .preco {
+
+    width: 285px;
+    height: 440px;
+
+}
+      
+    /* --- ^ Depoimentos ^ --- */
+    
+    .footer {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+    
+    .juli{
+        width: 100%;
+    }
+    
+    .logo-jm {
+        width: 50vw;
+        margin: 15px 0 15px 0;
+    }
+    
+    .menurodape {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0 20px;
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        font-size: 1em;
+        user-select: none;
+    }
+    
+    .navrodape {
+        display: flex;
+        padding: 0;
+        list-style: none;
+    }
+    .linkmenuroda {
+        color: rgb(32, 32, 32);
+        background-image: linear-gradient(#fff, rgb(235, 235, 235));
+        padding: 5px 10px 5px 10px;
+        border-radius: 15px;
+        margin: 0 10px 0 10px;
+        font-weight: 300;
+    }
+    
+    .direitos {
+        display: flex;
+        align-items: center;
+        user-select: none;
+        font-size: 0.9em;
+        font-family: 'Ubuntu', sans-serif;
+        color: rgb(170, 170, 170);
+        font-style: italic;
+    }
+    
+    .logorodape {
+        width: 13vw;
+    }
+    /* --- ^ Footer ^ --- */
+    
+}
+
+@media only screen and (max-width: 400px) {
+    header {    
+        height: 430px;
+    }
+        
+    .logo-header {
+        width: 80vw;
+        margin-top: 70px;
+    }
+    
+    .menu {
+        display: flex;
+        align-items: center;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1em;
+    }
+    
+    .nav {
+        display: flex;
+    }
+    
+    .link-nav {
+        margin-left: 20px;
+        list-style: none;
+        font-weight: 700;
+    }
+    
+    .link-nav-cont a {
+        margin: 0 20px 0 20px;
+    }
+    
+    /* --- ^ Header ^ --- */
+    .AR1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 850px;
+        background-image: linear-gradient(90deg, #ececec, #fcfcfc);
+    }
+    
+    .foto {
+        width: 90vw;
+    }
+    
+    .text-AR1 {
+        max-width: 75%;
+        margin-left: 0;
+    }
+    
+    /* --- ^ Sobre Mim ^ --- */
+    
+    
+    .AR2-depo {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        }
+        
+        .h1-ar2 {
+            font-size: 3em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            border-bottom: #fff solid 3px;
+            line-height: 30px;
+        }
+      
+    /* --- ^ Depoimentos ^ --- */
+    
+    .footer {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+    
+    .juli{
+        width: 100%;
+    }
+    
+    .logo-jm {
+        width: 50vw;
+        margin: 15px 0 15px 0;
+    }
+    
+    .menurodape {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0 20px;
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        font-size: 1em;
+        user-select: none;
+    }
+    
+    .navrodape {
+        display: flex;
+        padding: 0;
+        list-style: none;
+    }
+    .linkmenuroda {
+        color: rgb(32, 32, 32);
+        background-image: linear-gradient(#fff, rgb(235, 235, 235));
+        padding: 5px 10px 5px 10px;
+        border-radius: 15px;
+        margin: 0 10px 0 10px;
+        font-weight: 300;
+    }
+    
+    .direitos {
+        display: flex;
+        align-items: center;
+        user-select: none;
+        font-size: 0.9em;
+        font-family: 'Ubuntu', sans-serif;
+        color: rgb(170, 170, 170);
+        font-style: italic;
+    }
+    
+    .logorodape {
+        width: 13vw;
+    }
+    /* --- ^ Footer ^ --- */
+    
+}
