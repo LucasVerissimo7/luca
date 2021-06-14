@@ -1,7 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* 
+Heebo         font-family: 'Heebo', sans-serif; 
+Montserrat    font-family: 'Montserrat', sans-serif;
+
+*/
+
 
 * {
     padding: 0;
@@ -146,22 +152,22 @@ header {
     max-width: 70vh;
     text-align: justify;
     margin-left: 30px;
-    line-height: 10px;
 }
 
 .h1-AR1 {
     font-size: 3em;
-    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     color: #3a3a3a;
-    border-bottom: #3a3a3a solid 3px;
+    border-bottom: #3a3a3a solid 2px;
 }
 
 .h3-AR1 {
     font-size: 1.2em;
     margin-top: 15px;
     color: #3f3f3f;
-    font-style: italic;
-    line-height: 25px;
+    font-weight: 400;
+    font-family: 'Heebo', sans-serif;
 }
 /*-------------------------- SOBRE MIM ----------------------------------*/
 
@@ -184,8 +190,8 @@ animation: fadeIn 1s ease-in-out;
     
     .h1-ar2 {
         font-size: 3.5em;
-        font-weight: 700;
-        font-family: 'Roboto Slab', serif;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
         margin-bottom: 10px;
         color: #3a3a3a;
     }
@@ -216,7 +222,7 @@ animation: fadeIn 1s ease-in-out;
      text-align: center;
      margin-top: 10px;
      user-select: none;
-     font-family: 'Ubuntu', sans-serif;
+     font-family: 'Montserrat', sans-serif;
      font-size: 13px;
      background: #166beb;
      padding: 70px 30px 30px 30px;
@@ -225,9 +231,9 @@ animation: fadeIn 1s ease-in-out;
     }
     
     .h4-bold {
-        font-weight: 500;
+        font-weight: 700;
         margin-top: 10px;
-        font-family: 'Roboto Slab', serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 1.6em;
         color: #ffffff;
         font-size: 15px;
@@ -255,8 +261,10 @@ animation: fadeIn 1s ease-in-out;
 
 .h1-ar3-top{
     font-size: 3em;
-    font-weight: 800;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
     color: #222222;
+    margin-bottom: 30px;
 }
 .servicos {
     display: flex;
@@ -361,8 +369,7 @@ animation: fadeIn 1s ease-in-out;
 .h1-ar3 {
     font-size: 2.3em;
     font-weight: 700;
-    font-family: 'Baloo Tammudu 2', cursive;
-    line-height: 15px;
+    font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     text-shadow: rgb(0, 0, 0) 0px 0px 20px;
     -webkit-animation: fadeIn 1s ease-in-out;
@@ -383,7 +390,7 @@ animation: fadeIn 1s ease-in-out;
 .h3-ar3 {
     font-size: 1em;
     font-weight: 300;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     text-shadow: rgb(0, 0, 0) 0px 0px 20px;
     -webkit-animation: fadeIn 1s ease-in-out;
@@ -415,8 +422,9 @@ animation: fadeIn 1s ease-in-out;
     border-radius: 15px 15px 0 0 ;
     width: 100%;
     text-align: center;
-    height: 40px;
     color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0 10px 0;
 }
 
 .lista {
@@ -427,18 +435,19 @@ animation: fadeIn 1s ease-in-out;
 .valor {
     display: flex;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .preco {
     background: #f5f5f5;
     box-shadow: 0 2px 15px 0 rgba(0,0,0,.15);
     border-radius: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 25px;
+    max-width: 370px;
 }
 
 .title-preco {
@@ -477,7 +486,7 @@ animation: fadeIn 1s ease-in-out;
     font-style: italic;
     padding: 5px 8px 5px 8px;
     border-radius: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .valor-atual {
@@ -487,7 +496,7 @@ animation: fadeIn 1s ease-in-out;
     place-items: center;
     margin: 15px;
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .depois {
     color: #166beb;
