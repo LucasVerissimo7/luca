@@ -430,6 +430,7 @@ animation: fadeIn 1s ease-in-out;
 .lista {
     margin: 15px;
     color:rgb(102, 102, 102);
+    font-family: 'Heebo', sans-serif; 
 }
 
 .valor {
