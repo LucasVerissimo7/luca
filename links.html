@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VerMed - Links</title>
     <style>
-        * {
+* {
     padding: 0;
     margin: 0;
 }
@@ -55,10 +55,10 @@ body {
     /* Colors */
     background: linear-gradient(45deg, #414370, #374e8d, #04868d);
     background-size: 300% 300%;
-    animation: colors 8s ease infinite;
+    animation: colors 9s ease infinite;
 
 }
-        
+
 header {
     width: 100%;
     place-items: center;
@@ -248,15 +248,29 @@ color: #414370;
 
 
         /* Responsividade - Celular */
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 400px) {
+        body {
 
+            background-size: 200% 200%;
+            animation: none;
+        }
         .cabeca {
             background-image: url("img/fundo.svg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+
+            height: 20vh;
         }
-        
+
+        .logo-vm {
+            width: 280px;
+            position: absolute;
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%, -50%);
+        }
+
         .blog {
             border-radius: 15px 0 15px 0;
             
@@ -319,6 +333,7 @@ color: #414370;
             width: 45px;
     }
 }
+
     </style>
 </head>
 <body>
