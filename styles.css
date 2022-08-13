@@ -93,7 +93,7 @@ html body {
 }
 
 .gradiente {
-    background-image: linear-gradient(90deg, #ff0054, #ff0077);
+    background-image: linear-gradient(90deg, #ff0054, #ff0c36, #ff0a31);
     color: #ff0054;
     background-clip: text;
     -webkit-background-clip: text;
