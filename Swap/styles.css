@@ -91,7 +91,6 @@ html body {
 
 /* ------------------- CABEÇALHO ------------------- */
 .cabeca {
-    background-color: #000;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -975,6 +974,10 @@ user-select: none;
 /* ------------------ TABLET ------------------ */
 @media only screen and (max-width: 900px) {
 
+    .cabeca {
+    background: rgb(0, 0, 0);
+    position: static;
+    }
 /* ------------------ AR1 ------------------ */
 .AR1 {
     height: 660px;
@@ -1194,6 +1197,31 @@ font-weight: 400;
 
 /* ------------------ CELULAR ------------------ */
 @media only screen and (max-width: 700px) {
+.cabeca {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    padding: 10px 0 10px 0;
+}
+
+.h1-H {
+    font-size: 0.8em;
+}
+
+.countdown {
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+    font-size: 2em;
+}
+.name {
+    margin-top: -18px;
+    font-size: 0.8em;
+}
+
+
 /* ------------------ BOTÕES ------------------ */
 #btn1 {
     padding: 15px 60px 15px 60px;
@@ -1252,8 +1280,9 @@ font-weight: 400;
 .imgAR42 {
     width: 52vw;
 }
+
 .imgAR4 {
-    width: 34vw;
+    width: 24vw;
 }
 /* ------------------ AR5 ------------------ */
 .AR5 {
