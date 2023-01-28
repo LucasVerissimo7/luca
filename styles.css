@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,800&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 p a {
     text-decoration: none;
 }
 li {
-    list-style: none;
     text-decoration: none;
+    list-style: none;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -35,649 +35,908 @@ html body {
 
     color: rgb(255, 255, 255);
     height:100%;
+
 }
-.cinza {
-    color:rgb(155, 155, 155)
-}
-
-.brilho {
-    text-shadow: 0px 0px 10px #ff480023;
-    color: #ff006a;
-}
-
-/* ------------------- Botões ------------------- */
-#btn1 {
-    background: rgb(144,71,217);
-    background-image: linear-gradient(45deg, #bb2a30 0%, #ff0054, #ff0054, #d52535 );
-    padding: 25px 70px 25px 70px;
-    border-radius: 40px;
-
-
-    color: white;
-    font-size: 1.2em;
-    font-weight: 500;
-    font-family: 'Ubuntu', sans-serif;
-    box-shadow: 0px 0px 40px #ff00549c;
-    letter-spacing: 10px;
-
-    
-}
-
-#btn1:hover {
-    box-shadow: 0px 0px 30px #ff0054dc;
-    transition-duration: 200ms;
-    flex-basis: 100%;
-}
-
-#btn2 {
-    background: rgb(144,71,217);
-    background-image: linear-gradient(45deg, #bb2a30 0%, #ff0054, #ff0054, #d52535 );
-    padding: 25px 70px 25px 70px;
-    border-radius: 40px;
-
-
-    color: white;
-    font-size: 1.2em;
-    font-weight: 500;
-    font-family: 'Ubuntu', sans-serif;
-    box-shadow: 0px 0px 40px #ff00549c;
-    letter-spacing: 10px;
-
-    
-}
-
-#btn2:hover {
-    box-shadow: 0px 0px 30px #ff0054dc;
-    transition-duration: 200ms;
-    flex-basis: 100%;
-}
-
-.gradiente {
-    background-image: linear-gradient(90deg, #ff0054, #ff0c36, #ff0a31);
-    color: #ff0054;
-    background-clip: text;
-    -webkit-background-clip: text;
-    font-size: 1.2em;
-    font-weight: 700;
-    text-shadow: 0 0 40px #ff0054;
-}
-
-#laranja {
-    color: #ff006a;
-}
-/* ------------------- Botões ------------------- */
-
-
-
-
-
-/* ------------------- CABEÇALHO ------------------- */
-.cabeca {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #141414;
-    padding: 20px;
-}
-.nav {
-    display: flex;
-}
-.linkinsta {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-weight: 400;
-    margin-left: 40px;
-    display: flex;
-}
-.insta {
-    margin-left: 8px;
-}
-.linkmenu {
-    text-decoration: none;
-    color: white;
-    font-weight: 400;
-    margin-left: 40px;
-}
-.linkmenu:hover {
-    color: #ff0054;
-    transition-duration: 200ms;
-}
-
-.logocabeca {
- width: 6vw;
-}
-
-
-/* ------------------- CABEÇALHO ------------------- */
-
- @keyframes bounce {
+@keyframes fade {
     from {
-      transform: translateY(0px);
+       opacity: 0%;
     }
     to {
-      transform: translateY(-15px);
+       opacity: 100%;
     }
   }
-/* animation: bounce 1s infinite alternate;
--webkit-animation: bounce 1s infinite alternate; */
 
-/* SOBE E DESCE CONTINUAMENTE */
+/* Animação */
+@keyframes colors {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
- /* @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; } 
- Opacidade */
+  /* Animação */
+  @keyframes size {
+    from {
+      height: 0px;
+    }
 
+    to {
+        height: 400px;
+    }
+  }
+/* --------------- CABEÇA ----------------- */
 
-
-
-/* ------------------- AR1 ------------------- */
-.AR1 {
-    background-image: url("img/imgg.png"); /* The image used */
-    background-color: #141414; /* Used if the image is unavailable */
-    background-position: top; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-    background-attachment: fixed;
-
-    background-position: top;
+.cabeca {
     display: flex;
-    justify-content: center;
-    padding: 25px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 100px;
+
+    background-image: url(assets/img/FUNDO.webp);
+    background-color: #01061c;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 400px;
+    animation: size ease-in-out 1000ms;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.waves {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    margin-bottom: -2px;
+}
+
+.logo-cabeca {
+    width: 400px;
+}
+
+.text-head {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.imagem-1 {
-    display: inline-block;
-    animation: bounce 1s infinite alternate;
--webkit-animation: bounce 1s infinite alternate;
-}
-.img1 {
-    width: 45vw;
+.texto-1 {
+    margin: 30px;
 }
 
-.text1 {
-    max-width: 40vw;
-}
-
-.h1-1 {
-    font-size: 3em;
-    font-weight: 700;
-    font-family: 'Ubuntu', sans-serif;
-    margin-bottom: 10px;
-
-    /* Primeiro passo: definir um degradê como fundo */
-    background: linear-gradient(94deg, rgba(255,255,255,1) 0%, rgba(255,239,236,1) 31%, rgba(255,233,239,1) 62%, rgba(255,255,255,1) 100%); 
-  
-    /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
-  background-clip: text;
-  -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
-
-  /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
-  -webkit-text-fill-color: transparent;
-
-  /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
-  color: white;
-  
-}
-
-.h2-1 {
-    font-size: 1.5em;
-    font-weight: 500;
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 10px;
-}
-
-.h3-1 {
-    font-size: 1.1em;
-    font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
-    text-align: justify;
-    margin-bottom: 10px;
-}
-
-.botao-1 {
-    margin: 50px 0 0 0;
-}
-
-/* ------------------- AR1 ------------------- */
-
-
-
-
-
-/* ------------------- AR2 ------------------- */
-.AR2 {
-text-align: center;
-padding-top: 25px;
-padding-bottom: 25px;
-display: flex;
-flex-direction: column;
-place-items: center;
-
-background-image: url("img/bg2.png"); 
-background-color: #141414; 
-background-position: center; 
-background-repeat: no-repeat; 
-background-size: cover; 
-
-box-shadow: 0px 0px 100px #131313;
-
-}
-
-.servicos {
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 85vw;
-}
-
-.CRIATIVOS, .THUMBS, .IDENTIDADE {
-    max-width: 30vw;
-
-    padding: 40px;
-    margin: 10px;
-    border: solid 1px #ff0054;
-    border-radius: 0px 30px 0px 30px;
-    box-shadow: 0 0 20px #ff00553a;
-}
-
-.CRIATIVOS {
-    background-image: url("img/12.png"); 
-    background-color: #14141494; 
-    background-position: fixed; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-
-} 
-
-.THUMBS {
-    background-image: url("img/12.png"); 
-    background-color: #14141494; 
-    background-position: fixed; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-}
-
-.IDENTIDADE {
-    background-image: url("img/12.png"); 
-    background-color: #14141494; 
-    background-position: fixed; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-}
-
-.h1-ar2 {
-    font-size: 3em;
-    font-weight: 700;
-    font-family: 'Ubuntu', sans-serif;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    color: #ffffff;
-}
-
-.h2-AR2 {
-    font-size: 2.5em;
-    font-weight: 700;
-    font-family: 'Ubuntu', sans-serif;
-
-    background-image: linear-gradient(90deg, #cf0448, #ff0054);
-    color: black;
-    background-clip: text;
-    -webkit-background-clip: text;
-  
-    /* Adicionado: */
-    -webkit-text-fill-color: transparent;
-
-
-    margin-bottom: 40px;
-}
-.h3-AR2 {
-    font-size: 1.52em;
-    font-weight: 500;
-    font-family: 'Ubuntu', sans-serif;
-    color: #e9e9e9;
-    margin: 20px 0px 20px 0px;
-}
-
-.ligth {
-    font-weight: 300;
-}
-
-
-.lista-AR2 {
+.h1-head {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.5rem;
     text-align: center;
-    padding-left: 10px;
-}
-
-.lista-AR2 li::marker {
-    content: "🔥  ";
-}
-
-.botaoo {
-    margin: 60px;
-}
-
-
-/* ------------------- AR2 ------------------- */
-
-
-/* ------------------- AR5 ------------------- */
-.AR5 {
-    background-image: url("img/img1.png"); /* The image used */
-    background-color: #ff0054; /* Used if the image is unavailable */
-    background-position: fixed; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-    height: 30vh;
-    background-attachment: fixed;
-}
-/* ------------------- AR5 ------------------- */
-
-
-/* ------------------- RODAPÉ ------------------- */
-
-footer {
-    display: grid;
-    place-items: center;
-    background-color: rgb(34, 34, 34);
-    padding: 5vh;
-    margin: 0;
-    border-top: #ff00 solid 3px;
-}
-
-.logorodape {
-    width: 7vw;
-    user-select: none;
-    margin: 10px 0 20px 0;
-}
-
-.menurodape {
-    text-decoration: none;
-    color: white;
     font-weight: 400;
-    font-size: 1em;
-    user-select: none;
 }
 
-.navrodape {
-    display: flex;
-    padding: 0;
-}
-.linkmenuroda {
-    text-decoration: none;
-    color: #FF0054;
-    font-weight: 300;
-    margin: 0 10px 0 10px;
-    justify-items: center;
-    list-style: none;
-    font-weight: 600;
-}
+.botao {
+text-decoration: none;
 
-.direitos {
-    max-width: 40vw;
-    user-select: none;
-    text-align: center;
-    font-size: 0.7em;
-    margin: 15px 0 15px 0;
-}
-
-.redes {
-    display: flex;
-    margin: 20px 0 20px 0;
-    user-select: none;
 }
 
 .icon {
+    width: 30px;
+    margin-right: 15px;
+}
+.text-btn {
+    color: rgb(255, 248, 248);
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+
+    padding: 11px;
+    width: 320px;
+
+    text-align: center;
+    
+    background: #F92D76;
+    box-shadow: 0px 0px 24px #F92D76;
+    border-radius: 70px;
+
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 30px #3d91ff;
+    transition-duration: 200ms;
+    flex-basis: 100%;
+}
+
+
+/* --------------- CABEÇA ----------------- */
+
+/* --------------- MAIN ----------------- */
+main {
+    display: flex;
+    flex-direction: column;
+}
+/* --------------- MAIN ----------------- */
+
+
+/* --------------- NOSSOS SERVIÇOS ----------------- */
+.ARG1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 68px;
+    background: #E0296C;
+}
+
+.titulo {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 30px;
+}
+
+.ARG1-itens {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ARG1-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+    padding: 25px;
+    margin: 10px;
+    background: #0c0c2acc;
+    backdrop-filter: blur(3px);
+    border-radius: 47px;
+    filter: drop-shadow(20px 20px 9px rgba(0, 0, 0, 0.3));
+}
+
+.h2-ARG1 {
+    font-family: Montserrat, sans-serif;
+    text-align: left;
+}
+
+.item-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+.ico-list {
+    width: 20px;
+    margin-right: 10px;
+}
+.icon-box-moeda {
+    width: 40px;
+    margin-bottom: 10px;
+}
+.icon-box-social {
+    width: 60px;
+    margin-bottom: 10px;
+}
+.icon-box-dsg {
+    width: 50px;
+    margin-bottom: 10px;
+}
+/* --------------- NOSSOS SERVIÇOS ----------------- */
+
+
+
+/* --------------- GRUPO ----------------- */
+
+.AR11:hover {
+    filter: brightness(1);
+    transition-duration: 200ms;
+}
+
+.grupo {
+    display: flex;
+    flex-direction: row;
+    background-color: #ebebeb;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    height: 500px;
+
+    background-image: url(assets/img/BG2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-fts {
+    display: flex;
+    flex-direction: column;
+    max-width: 30vw;
+}
+
+.h1-grupo {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: left;
+    color: #11112e;
+}
+
+.h1-grupo span {
+    color:#e0094a;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 3.3rem;
+    text-align: left;
+}
+
+.h2-grupo {
+    font-family: 'Montserrat', Roboto;
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-align: justify;
+    color: #282828;
+}
+
+.fts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.AR1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+
+    width: 150px;
+    height: 360px;
+    background-image: url(assets/img/LUCAS.webp);
+    background-color: #11112e;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 60px 0 60px 0;
+
+    box-shadow: #00000024 0px 0px 30px;
+}
+
+.AR2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+    
+    width: 150px;
+    height: 360px;
+
+    background-image: url(assets/img/RAFAEL.webp);
+    background-color: #11112e;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 60px 0 60px 0;
+
+    box-shadow: #00000024 0px 0px 30px;
+}
+
+.AR3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+
+    width: 150px;
+    height: 360px;
+
+    background-image: url(assets/img/ISABEL.webp);
+    background-color: #11112e;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 60px 0 60px 0;
+
+    box-shadow: #00000024 0px 0px 30px;
+}
+
+.AR4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+
+    width: 150px;
+    height: 360px;
+
+    background-image: url(assets/img/VICTORIA.webp);
+    background-color: #11112e;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 60px 0 60px 0;
+
+    box-shadow: #00000042 0px 0px 30px;
+}
+
+.img1 {
+    width: 25vw;
+}
+
+.textoAR1 {
+    padding: 20px;
+}
+
+.text1 {
+    max-width: 20vw;
+}
+
+.h1-1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.h2-1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #ff5656;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.h2-3 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #11112e;
+}
+/* --------------- GRUPO ----------------- */
+
+
+/* --------------- PQ INVESTIR ----------------- */
+.ARG3 {
+    display: flex;
+    flex-direction: row;
+    background: #FF1165;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto-ARG3 {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-left: 170px;
+}
+
+.h1-ARG3 {
+    font-family: 'Montserrat';
+    font-size: 3.1rem;
+    font-weight: 700;
+    color: #11112e;
+}
+
+.h2-ARG3 {
+    font-family: 'Montserrat';
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 10px;
+}
+.h2-ARG3 span{
+    font-family: 'Montserrat';
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #11112e;
+    margin-top: 10px;
+}
+
+#net {
+    font-size: 2.6rem;
+}
+
+.img-ARG3 {
+    width: 50vw;
+}
+
+.texto-ARG3 .text-btn {
+    color: #FF1165;
+    font-weight: 700;
+    background: #ffffff;
+    box-shadow: 0px 0px 24px #ffffff;
+    margin-top: 30px;
+    padding: 16px;
+    font-size: 1.7rem;
+
+}
+/* --------------- PQ INVESTIR ----------------- */
+
+/* ------------- O QUE VAMOS ENTREGAR --------------*/
+
+.ARG4 {
+background: #19203a;
 display: flex;
-margin: 0 10px 0 10px;
-user-select: none;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+position: relative;
 }
 
-/* ------------------- RODAPÉ ------------------- */
+.list-ARG4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 20px;
+}
+
+.text-ARG4 {
+display: flex;
+flex-direction: column;
+max-width: 40vw;
+margin-right: -100px;
+}
+
+.item-ARG4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.h1-ARG4 {
+font-size: 4rem;
+font-family: 'Montserrat';
+font-weight: 700;
+color: #ff1165;
+}
+
+.h2-ARG4 {
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+}
+
+.icon-ARG4 {
+    width: 40px;
+    margin-right: 10px;
+}
+.imagem-ARG4 {
+    width: 50vw;
+}
+
+/* ------------- O QUE VAMOS ENTREGAR --------------*/
+
+/* ------------- PEÇA O SEU ORÇAMENTO --------------*/
+.ARG5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color:rgb(11, 56, 230);
+    padding: 100px;
+
+    position: relative;
+}
+
+.text-ARG5 {
+    max-width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1-ARG5 {
+    font-size: 4.5rem;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.h1-ARG5 span{
+    font-size: 4.5rem;
+    color: #ff70a3;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+ .text-ARG5 .text-btn {
+    font-size: 2rem;
+    width: 450px;
+    padding: 20px 11px 20px 11px;
+ }
 
 
 
+/* ------------- PEÇA O SEU ORÇAMENTO --------------*/
 
-/* ------------------- RESPONSIVIDADE ------------------- */
+/* ------------- RODAPÉ ------------- */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #19203a;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
 
+.marca {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer {
+    width: 95px;
+}
+
+.flash-footer {
+    width: 280px;
+    margin-bottom: 20px;
+}
+.cop {
+    font-size: 1rem;
+    font-family: 'Dosis', sans-serif;
+    color: #f1f1f1;
+    margin-right: 10px;
+}
+
+
+/* ------------------ TABLET ------------------ */
 @media only screen and (max-width: 900px) {
-    .AR1 {
-      display:flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 25px;
 
-      background-image: none;
-    }
-
-    .AR2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .servicos {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .CRIATIVOS, .THUMBS, .IDENTIDADE {
-        max-width: 80vw;
-    }
-    
-    #btn1 {
-        background-image: linear-gradient(45deg, #bb2a30 0%, #ff0054, #ff0054, #d52535 );
-        box-shadow: 0px 0px 40px #ff00549c;
-        font-size: 1.5em;
-        font-weight: 500;
-        padding: 30px 70px 30px 70px;
-        letter-spacing: 10px;
-    }
-
-    #btn2 {
-        background-image: linear-gradient(45deg, #bb2a30 0%, #ff0054, #ff0054, #d52535 );
-        font-size: 1.5em;
-        font-weight: 500;
-        padding: 30px 70px 30px 70px;
-        letter-spacing: 10px;
-    }
-
-    .botao-1 {
-        margin: 50px 0 50px 0;
-    }
-
-    .text1 {
-        text-align: center;
-        max-width: 85vw;
-        margin-top: -150px;
-    }
-    .img1 {
-        width: 100vw;
-        margin-top: 0px;
-    }
-
-    .h1-1 {
-        font-size: 4em;
-        text-align: center;
-    }
-
-    .h2-1 {
-        font-size: 2.1em;
-        font-weight: 400;
-        font-family: 'Open Sans', sans-serif;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-
-    .cabeca {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: rgba(19, 19, 19, 0.342);
-        padding: 7px;
-        width: 100%;
-        position: fixed;
-        margin: 0;
-    }
-
-    .linkmenu {
-        text-decoration: none;
-        color: white;
-        font-weight: 700;
-        font-size: 1em;
-        margin-left: 10px;
-        padding: 5px;
-    }
-
-    .logocabeca {
-        width: 8vh;
-       }
-       
-    .linkinsta {
-       display: none;
-    }
-
-
-    .logorodape {
-        width: 18vw;
-        user-select: none;
-        margin: 10px 0 20px 0;
-    }
-
-    
-.direitos {
-    max-width: 50vw;
-    user-select: none;
-    text-align: center;
-    font-size: 0.5em;
-    margin: 15px 0 15px 0;
+/* ------ CABEÇA ------- */
+.cabeca {
+    justify-content: space-around;
+    padding: 150px 0 150px 0;
+}
+.logo-cabeca {
+    width: 40vw;
 }
 
+.text-btn {
+    font-size: 1rem;
+    padding: 15px 0 15px 0;
+}
+/* ------ CABEÇA ------- */
 
-  }
+/* ------ NOSSOS SERVIÇOS (ARG1) ------- */
 
+.ARG1-box {
+    max-width: 140px;
+    margin: 0;
+}
+.h2-ARG1 {
+    font-size: 0.9rem;
+    max-width: 104px;
+    
+}
+.icon-box-moeda {
+    width: 30px;
+}
+
+.icon-box-dsg {
+    width: 40px;
+}
+
+.icon-box-social {
+    width: 51px;
+}/* ------ NOSSOS SERVIÇOS (ARG1) ------- */
+
+
+/* ------ GRUPO ------- */
+
+.grupo {
+    flex-direction: column;
+padding: 100px 0 100px 0;
+}
+
+.text-fts {
+    max-width: 80vw;
+    margin-bottom: 30px;
+}
+
+/* ------ GRUPO ------- */
+
+
+/* ------ PQ INVESTIR EM MKT ------- */
+.ARG3 {
+    position: relative;
+    padding: 40px;
+}
+
+.img-ARG3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.texto-ARG3 {
+    max-width: 400px;
+    margin-left: 68px;
+}
+
+.h1-ARG3 {
+    font-size: 2.5rem;
+}
+.h2-ARG3 {
+    font-size: 1.3rem;
+}
+.h2-ARG3 span {
+    font-size: 1.5rem;
+}
+/* ------ PQ INVESTIR EM MKT ------- */
+
+
+/* ------ TE ENTREGAMOS MENSALMENTE ------- */
+.ARG4 {
+    position: relative;
+    justify-content: left;
+    padding: 100px;
+}
+.text-ARG4 {
+    max-width: 40vw;
+    margin: 0;
+}
+
+.h1-ARG4 {
+    font-size: 2.5rem;
+}
+.h2-ARG4 {
+    font-size: 1.1rem;
+}
+.icon-ARG4 {
+    width: 27px;
+}
+.imagem-ARG4 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 55vw;
+    margin-bottom: -50px;
+}
+/* ------ TE ENTREGAMOS MENSALMENTE ------- */
+
+
+/* ------ PEÇA JÁ SEU ORÇAMENTO ------- */
+.h1-ARG5 {
+    font-size: 2.7rem;
+}
+.h1-ARG5 span {
+    font-size: 2.7rem;
+}
+/* ------ PEÇA JÁ SEU ORÇAMENTO ------- */
+
+}
+.text-ARG5 .text-btn {
+    font-size: 1.3rem;
+    padding: 15px 0px 15px 0px;
+}
+
+/* ------------------ TABLET ------------------ */
+
+
+
+
+/* ------------------ CELULAR ------------------ */
 @media only screen and (max-width: 700px) {
-    .AR1 {
-      display:flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 25px;
-    }
-
-    .text1 {
-        text-align: justify;
-        max-width: 80vw;
-        margin-top: -50px;
-        
-    }
-    .img1 {
-        width: 100vw;
-        margin-top: 0px;
-    }
-
-    .h1-1 {
-        font-size: 2.5em;
-        text-align: center;
-    }
-
-    .h2-1 {
-        font-size: 1.5em;
-    }
-
-    .h3-1 {
-        font-size: 1em;
-        font-weight: 400;
-        font-family: 'Open Sans', sans-serif;
-        text-align: justify;
-        margin-bottom: 10px;
-    }
 
 
-    .cabeca {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: rgba(19, 19, 19, 0.342);
-        padding: 7px;
-        width: 100%;
-        position: fixed;
-        margin: 0;
-    }
+    /* ------ CABEÇA ------- */
+.cabeca {
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 100px 0 100px 0;
+}
+.logo-cabeca {
+    width: 65vw;
+}
+.text-btn {
+    width: 250px;
+}
 
-    .linkmenu {
-        text-decoration: none;
-        color: white;
-        font-weight: 700;
-        font-size: 1em;
-        margin-left: 10px;
-        padding: 5px;
-    }
+/* ------ CABEÇA ------- */
 
-    .logocabeca {
-        width: 8vh;
-       }
-       
-    .linkinsta {
-       display: none;
-    }
+/* ------ NOSSOS SERVIÇOS (ARG1) ------- */
 
-    .AR2-depo {
-        display: flex;
-        place-items: center;
-        flex-direction: column;
-    }
-    .depoimentos {
-        width: 75%;
-        margin-top: 25px;
-    }
+.ARG1-box {
+    max-width: 70vw;
+    margin: 0 0 20px 0;
+    filter: drop-shadow(10px 0px 9px rgba(0, 0, 0, 0.3));
+}
 
-    .logorodape {
-        width: 18vw;
-        user-select: none;
-        margin: 10px 0 20px 0;
-    }
-
-    
-.direitos {
-    max-width: 50vw;
-    user-select: none;
+.ARG1-itens {
+    flex-wrap: wrap;
+    width: 70vw;
+    flex-direction: column;
+}
+.ARG1-titulo .titulo {
+    font-size: 2.8rem;
     text-align: center;
-    font-size: 0.5em;
-    margin: 15px 0 15px 0;
+}
+.h2-ARG1 {
+    font-size: 1rem;
+    max-width: 70vw;
+    
+}
+.icon-box-moeda {
+    width: 45px;
 }
 
-#btn1 {
-    background-image: linear-gradient(45deg, #bb2a30 0%, #ff0054, #ff0054, #d52535 );
-    box-shadow: 0px 0px 40px #ff00549c;
-    font-size: 1em;
-    font-weight: 500;
-    padding: 20px 35px 20px 35px;
-    letter-spacing: 5px;
+.icon-box-dsg {
+    width: 60px;
 }
 
-#btn2 {
-    background-image: linear-gradient(45deg, #bb2a30 0%, #ff0054, #ff0054, #d52535 );
-    font-size: 1em;
-    font-weight: 500;
-    padding: 20px 35px 20px 35px;
-    letter-spacing: 5px;
+.icon-box-social {
+    width: 80px;
+}/* ------ NOSSOS SERVIÇOS (ARG1) ------- */
+
+
+/* ------ GRUPO ------- */
+
+.grupo {
+    flex-direction: column;
+    padding: 250px 0 250px 0;
 }
 
-.botao-1 {
-    margin: 50px 0 50px 0;
+.text-fts {
+    max-width: 80vw;
+    margin-bottom: 30px;
+}
+.h1-grupo {
+    font-size: 2rem;
+}
+.h1-grupo span{
+    font-size: 3rem;
+}
+.h2-grupo {
+    font-size: 1rem;
+}
+.fts {
+    justify-content: center;
 }
 
-.botao2 {
-    margin: 50px 0 50px 0;
-    width: 80vw;
+.h1-1 {
+    font-size: 1rem;
+}
+.h2-1 {
+    font-size: 0.9rem;
+    margin: 10px 0 10px 0;
 }
 
-  }
+.AR1 {
+    height: 336px;
+}
+.AR2 {
+    height: 336px;
+}
+.AR3 {
+    height: 336px;
+}
+.AR4 {
+    height: 336px;
+}
+/* ------ GRUPO ------- */
+
+
+/* ------ PQ INVESTIR EM MKT ------- */
+.ARG3 {
+    position: relative;
+    padding: 40px;
+    height: 390px;
+    flex-direction: column;
+}
+
+.img-ARG3 {
+display: none;
+
+}
+
+.texto-ARG3 {
+    max-width: 80vw;
+    margin: 0px;
+}
+
+.h1-ARG3 {
+    font-size: 2.5rem;
+}
+.h2-ARG3 {
+    font-size: 1.3rem;
+}
+.h2-ARG3 span {
+    font-size: 1.5rem;
+}
+
+.texto-ARG3 .text-btn {
+    font-size: 1.1em;
+    width: 70vw;
+}
+/* ------ PQ INVESTIR EM MKT ------- */
+
+
+/* ------ TE ENTREGAMOS MENSALMENTE ------- */
+.ARG4 {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0px 0px 0px;
+    flex-direction: column;
+}
+.text-ARG4 {
+    max-width: 70vw;
+    margin: 0;
+    margin-left: 30px;
+}
+
+.h1-ARG4 {
+    font-size: 2rem;
+}
+.h2-ARG4 {
+    font-size: 1rem;
+}
+
+.imagem-ARG4 {
+    position: inherit;
+    width: 90vw;
+    margin-top: -20px;
+}
+/* ------ TE ENTREGAMOS MENSALMENTE ------- */
+
+
+/* ------ PEÇA JÁ SEU ORÇAMENTO ------- */
+.h1-ARG5 {
+    font-size: 2.3rem;
+}
+.h1-ARG5 span {
+    font-size: 2.3rem;
+}
+
+.text-ARG5 .text-btn {
+    font-size: 1.3rem;
+    width: 300px;
+}
+/* ------ PEÇA JÁ SEU ORÇAMENTO ------- */
+
+
+/* ------ RODAPÉ ------- */
+.flash-footer {
+    width: 190px;
+}
+
+.marca {
+    flex-direction: column-reverse;
+}
+.cop {
+    margin-top: 10px;
+    margin-right: 0px;
+}
+
+.logo-footer {
+    width: 100px;
+    margin-top: 10px;
+}
+
+/* ------ RODAPÉ ------- */
+}
+
+/* ------------------ CELULAR ------------------ */
