@@ -79,7 +79,7 @@ html body {
 
     padding: 100px;
 
-    background-image: url(assets/img/FUNDO.png);
+    background-image: url(assets/img/FUNDO.webp);
     background-color: #01061c;
     background-position: center;
     background-repeat: no-repeat;
@@ -102,8 +102,6 @@ html body {
 
 .logo-cabeca {
     width: 400px;
-    animation: fade ease-in-out 1000ms;
-    animation-delay: 1000ms;
 }
 
 .text-head {
@@ -364,7 +362,7 @@ main {
     width: 150px;
     height: 360px;
 
-    background-image: url(assets/img/VICTORIA.png);
+    background-image: url(assets/img/VICTORIA.webp);
     background-color: #11112e;
     background-position: center;
     background-repeat: no-repeat;
@@ -559,6 +557,8 @@ color: #ff1165;
 .h1-ARG5 span{
     font-size: 4.5rem;
     color: #ff70a3;
+    font-family: 'Montserrat';
+    font-weight: 700;
 }
  .text-ARG5 .text-btn {
     font-size: 2rem;
@@ -750,7 +750,10 @@ padding: 100px 0 100px 0;
     padding: 100px 0 100px 0;
 }
 .logo-cabeca {
-    width: 75vw;
+    width: 65vw;
+}
+.text-btn {
+    width: 250px;
 }
 
 /* ------ CABEÇA ------- */
@@ -874,9 +877,9 @@ display: none;
 
 /* ------ TE ENTREGAMOS MENSALMENTE ------- */
 .ARG4 {
-    position: relative;
+    flex-direction: column;
     align-items: center;
-    padding: 60px 0px 220px 0px;
+    padding: 60px 0px 0px 0px;
     flex-direction: column;
 }
 .text-ARG4 {
@@ -893,11 +896,9 @@ display: none;
 }
 
 .imagem-ARG4 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    position: inherit;
     width: 90vw;
-    margin-bottom: -50px;
+    margin-top: -20px;
 }
 /* ------ TE ENTREGAMOS MENSALMENTE ------- */
 
