@@ -1,0 +1,955 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+p a {
+    text-decoration: none;
+}
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, b, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+html body {
+
+    color: rgb(255, 255, 255);
+    height:100%;
+
+}
+@keyframes fade {
+    from {
+       opacity: 0%;
+    }
+    to {
+       opacity: 100%;
+    }
+  }
+
+/* Animação */
+@keyframes colors {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* Animação */
+  @keyframes size {
+    from {
+      height: 0px;
+    }
+
+    to {
+        height: 400px;
+    }
+  }
+/* --------------- CABEÇA ----------------- */
+
+.cabeca {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 100px;
+
+    background-image: url(assets/img/FUNDO.webp);
+    background-color: #01061c;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 400px;
+    animation: size ease-in-out 1000ms;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.waves {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    margin-bottom: -2px;
+}
+
+.logo-cabeca {
+    width: 400px;
+}
+
+.text-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-1 {
+    margin: 30px;
+}
+
+.h1-head {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.botao {
+text-decoration: none;
+
+}
+
+.icon {
+    width: 30px;
+    margin-right: 15px;
+}
+.text-btn {
+    color: rgb(255, 248, 248);
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+
+    padding: 11px;
+    width: 320px;
+
+    text-align: center;
+    
+    background: #f92d74ee;
+    box-shadow: 0px 0px 24px #ff70a200;
+    border-radius: 70px;
+
+}
+
+.text-btn:hover {
+    background: #F92D76;
+    box-shadow: 0px 0px 24px #F92D76;
+    transition-duration: 200ms;
+    flex-basis: 100%;
+}
+
+.texto-ARG3 .text-btn:hover {
+    box-shadow: 0px 0px 24px #ffffffc7;
+    transition-duration: 200ms;
+    flex-basis: 100%;
+}
+
+
+/* --------------- CABEÇA ----------------- */
+
+/* --------------- MAIN ----------------- */
+main {
+    display: flex;
+    flex-direction: column;
+}
+/* --------------- MAIN ----------------- */
+
+
+/* --------------- NOSSOS SERVIÇOS ----------------- */
+.ARG1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 68px;
+    background: #E0296C;
+}
+
+.titulo {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 30px;
+}
+
+.ARG1-itens {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ARG1-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 200px;
+    padding: 25px;
+    margin: 10px;
+    background: #0c0c2acc;
+    backdrop-filter: blur(3px);
+    filter: drop-shadow(20px 20px 9px rgba(0, 0, 0, 0.3));
+}
+
+.h2-ARG1 {
+    font-family: Montserrat, sans-serif;
+    text-align: left;
+}
+
+.item-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+.ico-list {
+    width: 20px;
+    margin-right: 10px;
+}
+.icon-box-moeda {
+    width: 40px;
+    margin-bottom: 10px;
+}
+.icon-box-social {
+    width: 60px;
+    margin-bottom: 10px;
+}
+.icon-box-dsg {
+    width: 50px;
+    margin-bottom: 10px;
+}
+/* --------------- NOSSOS SERVIÇOS ----------------- */
+
+
+
+/* --------------- GRUPO ----------------- */
+
+.AR11:hover {
+    filter: brightness(1);
+    transition-duration: 200ms;
+}
+
+.grupo {
+    display: flex;
+    flex-direction: row;
+    background-color: #ebebeb;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    height: 500px;
+
+    background-image: url(assets/img/BG2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-fts {
+    display: flex;
+    flex-direction: column;
+    max-width: 30vw;
+}
+
+.h1-grupo {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: left;
+    color: #11112e;
+}
+
+.h1-grupo span {
+    color:#e0094a;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 3.3rem;
+    text-align: left;
+}
+
+.h2-grupo {
+    font-family: 'Montserrat', Roboto;
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-align: justify;
+    color: #282828;
+}
+
+.fts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.AR1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+
+    width: 150px;
+    height: 360px;
+    background-image: url(assets/img/LUCAS.webp);
+    background-color: #11112e;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 60px 0 60px 0;
+
+    box-shadow: #00000024 0px 0px 30px;
+}
+
+.AR2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+    
+    width: 150px;
+    height: 360px;
+
+    background-image: url(assets/img/RAFAEL.webp);
+    background-color: #11112e;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 60px 0 60px 0;
+
+    box-shadow: #00000024 0px 0px 30px;
+}
+
+.AR3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+
+    width: 150px;
+    height: 360px;
+
+    background-image: url(assets/img/ISABEL.webp);
+    background-color: #11112e;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 60px 0 60px 0;
+
+    box-shadow: #00000024 0px 0px 30px;
+}
+
+.AR4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+
+    width: 150px;
+    height: 360px;
+
+    background-image: url(assets/img/VICTORIA.webp);
+    background-color: #11112e;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 60px 0 60px 0;
+
+    box-shadow: #00000042 0px 0px 30px;
+}
+
+.img1 {
+    width: 25vw;
+}
+
+.textoAR1 {
+    padding: 20px;
+}
+
+.text1 {
+    max-width: 20vw;
+}
+
+.h1-1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.h2-1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #ff5656;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.h2-3 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #11112e;
+}
+
+.tem {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+/* --------------- GRUPO ----------------- */
+
+
+/* --------------- PQ INVESTIR ----------------- */
+.ARG3 {
+    display: flex;
+    flex-direction: row;
+    background: #FF1165;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto-ARG3 {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-left: 170px;
+}
+
+.h1-ARG3 {
+    font-family: 'Montserrat';
+    font-size: 3.1rem;
+    font-weight: 700;
+    color: #11112e;
+}
+
+.h2-ARG3 {
+    font-family: 'Montserrat';
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 10px;
+}
+.h2-ARG3 span{
+    font-family: 'Montserrat';
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #11112e;
+    margin-top: 10px;
+}
+
+#net {
+    font-size: 2.6rem;
+}
+
+.img-ARG3 {
+    width: 50vw;
+}
+
+.texto-ARG3 .text-btn {
+    color: #FF1165;
+    font-weight: 700;
+    background: #ffffff;
+    box-shadow: 0px 0px 24px #ffffff00;
+    margin-top: 30px;
+    padding: 16px;
+    font-size: 1.7rem;
+
+}
+/* --------------- PQ INVESTIR ----------------- */
+
+/* ------------- O QUE VAMOS ENTREGAR --------------*/
+
+.ARG4 {
+background: #19203a;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+position: relative;
+}
+
+.list-ARG4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 20px;
+}
+
+.text-ARG4 {
+display: flex;
+flex-direction: column;
+max-width: 40vw;
+margin-right: -100px;
+}
+
+.item-ARG4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.h1-ARG4 {
+font-size: 4rem;
+font-family: 'Montserrat';
+font-weight: 700;
+color: #ff1165;
+}
+
+.h2-ARG4 {
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+}
+
+.icon-ARG4 {
+    width: 40px;
+    margin-right: 10px;
+}
+.imagem-ARG4 {
+    width: 50vw;
+}
+
+/* ------------- O QUE VAMOS ENTREGAR --------------*/
+
+/* ------------- PEÇA O SEU ORÇAMENTO --------------*/
+.ARG5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color:rgb(11, 56, 230);
+    padding: 100px;
+
+    position: relative;
+}
+
+.text-ARG5 {
+    max-width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1-ARG5 {
+    font-size: 4.5rem;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.h1-ARG5 span{
+    font-size: 4.5rem;
+    color: #ff70a3;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+ .text-ARG5 .text-btn {
+    font-size: 2rem;
+    width: 450px;
+    padding: 20px 11px 20px 11px;
+ }
+
+
+
+/* ------------- PEÇA O SEU ORÇAMENTO --------------*/
+
+/* ------------- RODAPÉ ------------- */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #19203a;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.marca {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer {
+    width: 95px;
+}
+
+.flash-footer {
+    width: 280px;
+    margin-bottom: 20px;
+}
+.cop {
+    font-size: 1rem;
+    font-family: 'Dosis', sans-serif;
+    color: #f1f1f1;
+    margin-right: 10px;
+}
+
+
+/* ------------------ TABLET ------------------ */
+@media only screen and (max-width: 900px) {
+
+/* ------ CABEÇA ------- */
+.cabeca {
+    justify-content: space-around;
+    padding: 150px 0 150px 0;
+}
+.logo-cabeca {
+    width: 40vw;
+}
+
+.text-btn {
+    font-size: 1rem;
+    padding: 15px 0 15px 0;
+}
+/* ------ CABEÇA ------- */
+
+/* ------ NOSSOS SERVIÇOS (ARG1) ------- */
+
+.ARG1-box {
+    max-width: 140px;
+    margin: 0;
+}
+.h2-ARG1 {
+    font-size: 0.9rem;
+    max-width: 104px;
+    
+}
+.icon-box-moeda {
+    width: 30px;
+}
+
+.icon-box-dsg {
+    width: 40px;
+}
+
+.icon-box-social {
+    width: 51px;
+}/* ------ NOSSOS SERVIÇOS (ARG1) ------- */
+
+
+/* ------ GRUPO ------- */
+
+.grupo {
+    flex-direction: column;
+padding: 100px 0 100px 0;
+}
+
+.text-fts {
+    max-width: 80vw;
+    margin-bottom: 30px;
+}
+
+/* ------ GRUPO ------- */
+
+
+/* ------ PQ INVESTIR EM MKT ------- */
+.ARG3 {
+    position: relative;
+    padding: 40px;
+}
+
+.img-ARG3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.texto-ARG3 {
+    max-width: 400px;
+    margin-left: 68px;
+}
+
+.h1-ARG3 {
+    font-size: 2.5rem;
+}
+.h2-ARG3 {
+    font-size: 1.3rem;
+}
+.h2-ARG3 span {
+    font-size: 1.5rem;
+}
+/* ------ PQ INVESTIR EM MKT ------- */
+
+
+/* ------ TE ENTREGAMOS MENSALMENTE ------- */
+.ARG4 {
+    position: relative;
+    justify-content: left;
+    padding: 100px;
+}
+.text-ARG4 {
+    max-width: 40vw;
+    margin: 0;
+}
+
+.h1-ARG4 {
+    font-size: 2.5rem;
+}
+.h2-ARG4 {
+    font-size: 1.1rem;
+}
+.icon-ARG4 {
+    width: 27px;
+}
+.imagem-ARG4 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 55vw;
+    margin-bottom: -50px;
+}
+/* ------ TE ENTREGAMOS MENSALMENTE ------- */
+
+
+/* ------ PEÇA JÁ SEU ORÇAMENTO ------- */
+.h1-ARG5 {
+    font-size: 2.7rem;
+}
+.h1-ARG5 span {
+    font-size: 2.7rem;
+}
+/* ------ PEÇA JÁ SEU ORÇAMENTO ------- */
+
+}
+.text-ARG5 .text-btn {
+    font-size: 1.3rem;
+    padding: 15px 0px 15px 0px;
+}
+
+/* ------------------ TABLET ------------------ */
+
+
+
+
+/* ------------------ CELULAR ------------------ */
+@media only screen and (max-width: 700px) {
+
+
+    /* ------ CABEÇA ------- */
+.cabeca {
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 100px 0 100px 0;
+}
+.logo-cabeca {
+    width: 65vw;
+}
+.text-btn {
+    width: 250px;
+}
+
+/* ------ CABEÇA ------- */
+
+/* ------ NOSSOS SERVIÇOS (ARG1) ------- */
+
+.ARG1-box {
+    max-width: 70vw;
+    margin: 0 0 20px 0;
+    filter: drop-shadow(10px 0px 9px rgba(0, 0, 0, 0.3));
+}
+
+.ARG1-itens {
+    flex-wrap: wrap;
+    width: 70vw;
+    flex-direction: column;
+}
+.ARG1-titulo .titulo {
+    font-size: 2.8rem;
+    text-align: center;
+}
+.h2-ARG1 {
+    font-size: 1rem;
+    max-width: 70vw;
+    
+}
+.icon-box-moeda {
+    width: 45px;
+}
+
+.icon-box-dsg {
+    width: 60px;
+}
+
+.icon-box-social {
+    width: 80px;
+}/* ------ NOSSOS SERVIÇOS (ARG1) ------- */
+
+
+/* ------ GRUPO ------- */
+
+.grupo {
+    flex-direction: column;
+    padding: 250px 0 250px 0;
+}
+
+.text-fts {
+    max-width: 80vw;
+    margin-bottom: 30px;
+}
+.h1-grupo {
+    font-size: 2rem;
+}
+.h1-grupo span{
+    font-size: 3rem;
+}
+.h2-grupo {
+    font-size: 1rem;
+}
+.fts {
+    justify-content: center;
+}
+
+.h1-1 {
+    font-size: 1rem;
+}
+.h2-1 {
+    font-size: 0.9rem;
+    margin: 10px 0 10px 0;
+}
+
+.AR1 {
+    height: 336px;
+}
+.AR2 {
+    height: 336px;
+}
+.AR3 {
+    height: 336px;
+}
+.AR4 {
+    height: 336px;
+}
+/* ------ GRUPO ------- */
+
+
+/* ------ PQ INVESTIR EM MKT ------- */
+.ARG3 {
+    position: relative;
+    padding: 40px;
+    height: 390px;
+    flex-direction: column;
+}
+
+.img-ARG3 {
+display: none;
+
+}
+
+.texto-ARG3 {
+    max-width: 80vw;
+    margin: 0px;
+}
+
+.h1-ARG3 {
+    font-size: 2.5rem;
+}
+.h2-ARG3 {
+    font-size: 1.3rem;
+}
+.h2-ARG3 span {
+    font-size: 1.5rem;
+}
+
+.texto-ARG3 .text-btn {
+    font-size: 1.1em;
+    width: 70vw;
+}
+/* ------ PQ INVESTIR EM MKT ------- */
+
+
+/* ------ TE ENTREGAMOS MENSALMENTE ------- */
+.ARG4 {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0px 0px 0px;
+    flex-direction: column;
+}
+.text-ARG4 {
+    max-width: 70vw;
+    margin: 0;
+    margin-left: 30px;
+}
+
+.h1-ARG4 {
+    font-size: 2rem;
+}
+.h2-ARG4 {
+    font-size: 1rem;
+}
+
+.imagem-ARG4 {
+    position: inherit;
+    width: 90vw;
+    margin-top: -20px;
+}
+/* ------ TE ENTREGAMOS MENSALMENTE ------- */
+
+
+/* ------ PEÇA JÁ SEU ORÇAMENTO ------- */
+.h1-ARG5 {
+    font-size: 2.3rem;
+}
+.h1-ARG5 span {
+    font-size: 2.3rem;
+}
+
+.text-ARG5 .text-btn {
+    font-size: 1.3rem;
+    width: 300px;
+}
+/* ------ PEÇA JÁ SEU ORÇAMENTO ------- */
+
+
+/* ------ RODAPÉ ------- */
+.flash-footer {
+    width: 190px;
+}
+
+.marca {
+    flex-direction: column-reverse;
+}
+.cop {
+    margin-top: 10px;
+    margin-right: 0px;
+}
+
+.logo-footer {
+    width: 100px;
+    margin-top: 10px;
+}
+
+/* ------ RODAPÉ ------- */
+}
+
+/* ------------------ CELULAR ------------------ */
