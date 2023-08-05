@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,800&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 p a {
     text-decoration: none;
@@ -27,7 +24,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 13px;
 }
 
@@ -35,122 +32,11 @@ html body {
 
     color: rgb(255, 255, 255);
     height:100%;
-}
-.cinza {
-    color:rgb(155, 155, 155)
-}
-
-.brilho {
-    text-shadow: 0px 0px 10px #ff480023;
-    color: #ff006a;
+    background: #000;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* ------------------- Botões ------------------- */
-#btn1 {
-    background: rgb(144,71,217);
-    background-image: linear-gradient(45deg, #bb2a30 0%, #ff0054, #ff0054, #d52535 );
-    padding: 25px 70px 25px 70px;
-    border-radius: 40px;
-
-
-    color: white;
-    font-size: 1.2em;
-    font-weight: 500;
-    font-family: 'Ubuntu', sans-serif;
-    box-shadow: 0px 0px 40px #ff00549c;
-    letter-spacing: 10px;
-
-    
-}
-
-#btn1:hover {
-    box-shadow: 0px 0px 30px #ff0054dc;
-    transition-duration: 200ms;
-    flex-basis: 100%;
-}
-
-#btn2 {
-    background: rgb(144,71,217);
-    background-image: linear-gradient(45deg, #bb2a30 0%, #ff0054, #ff0054, #d52535 );
-    padding: 25px 70px 25px 70px;
-    border-radius: 40px;
-
-
-    color: white;
-    font-size: 1.2em;
-    font-weight: 500;
-    font-family: 'Ubuntu', sans-serif;
-    box-shadow: 0px 0px 40px #ff00549c;
-    letter-spacing: 10px;
-
-    
-}
-
-#btn2:hover {
-    box-shadow: 0px 0px 30px #ff0054dc;
-    transition-duration: 200ms;
-    flex-basis: 100%;
-}
-
-.gradiente {
-    background-image: linear-gradient(90deg, #ff0054, #ff0077);
-    color: #ff0054;
-    background-clip: text;
-    -webkit-background-clip: text;
-    font-size: 1.2em;
-    font-weight: 700;
-    text-shadow: 0 0 40px #ff0054;
-}
-
-#laranja {
-    color: #ff006a;
-}
-/* ------------------- Botões ------------------- */
-
-
-
-
-
-/* ------------------- CABEÇALHO ------------------- */
-.cabeca {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #141414;
-    padding: 20px;
-}
-.nav {
-    display: flex;
-}
-.linkinsta {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-weight: 400;
-    margin-left: 40px;
-    display: flex;
-}
-.insta {
-    margin-left: 8px;
-}
-.linkmenu {
-    text-decoration: none;
-    color: white;
-    font-weight: 400;
-    margin-left: 40px;
-}
-.linkmenu:hover {
-    color: #ff0054;
-    transition-duration: 200ms;
-}
-
-.logocabeca {
- width: 6vw;
-}
-
-
-/* ------------------- CABEÇALHO ------------------- */
-
- @keyframes bounce {
+@keyframes bounce {
     from {
       transform: translateY(0px);
     }
@@ -158,527 +44,161 @@ html body {
       transform: translateY(-15px);
     }
   }
-/* animation: bounce 1s infinite alternate;
--webkit-animation: bounce 1s infinite alternate; */
-
-/* SOBE E DESCE CONTINUAMENTE */
-
- /* @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; } 
- Opacidade */
 
 
-
-
-/* ------------------- AR1 ------------------- */
-.AR1 {
-    background-image: url("img/imgg.png"); /* The image used */
-    background-color: #141414; /* Used if the image is unavailable */
+header {
+    background-image: url("img/pc.png"); /* The image used */
+    height: 800px; /* You must set a specified height */
     background-position: top; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
-    background-attachment: fixed;
 
-    background-position: top;
+
+
     display: flex;
-    justify-content: center;
-    padding: 25px;
-    align-items: center;
+    flex-direction: column;
+    justify-content: top;
 }
 
-.imagem-1 {
-    display: inline-block;
+.superior {
+    padding: 130px 50px 50px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+}
+
+.inferior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.seta-down {
+    width: 40px;
     animation: bounce 1s infinite alternate;
 -webkit-animation: bounce 1s infinite alternate;
 }
-.img1 {
-    width: 45vw;
+.logo {
+    width: 240px;
 }
 
 .text1 {
-    max-width: 40vw;
+    max-width: 35vw;
+    margin-top: 20px;
+
 }
 
-.h1-1 {
-    font-size: 3em;
+.bold-green {
     font-weight: 700;
-    font-family: 'Ubuntu', sans-serif;
-    margin-bottom: 10px;
-
-    /* Primeiro passo: definir um degradê como fundo */
-    background: linear-gradient(94deg, rgba(255,255,255,1) 0%, rgba(255,239,236,1) 31%, rgba(255,233,239,1) 62%, rgba(255,255,255,1) 100%); 
-  
-    /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
-  background-clip: text;
-  -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
-
-  /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
-  -webkit-text-fill-color: transparent;
-
-  /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
-  color: white;
-  
+    color:#c6e704;
 }
 
-.h2-1 {
-    font-size: 1.5em;
-    font-weight: 500;
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 10px;
-}
-
-.h3-1 {
-    font-size: 1.1em;
-    font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
-    text-align: justify;
-    margin-bottom: 10px;
-}
-
-.botao-1 {
-    margin: 50px 0 0 0;
-}
-
-/* ------------------- AR1 ------------------- */
-
-
-
-
-
-/* ------------------- AR2 ------------------- */
-.AR2 {
-text-align: center;
-padding-top: 25px;
-padding-bottom: 25px;
-display: flex;
-flex-direction: column;
-place-items: center;
-
-background-image: url("img/bg2.png"); 
-background-color: #141414; 
-background-position: center; 
-background-repeat: no-repeat; 
-background-size: cover;
-background-attachment: fixed;
-
-box-shadow: 0px 0px 100px #131313;
-
-}
-
-.servicos {
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 85vw;
-}
-
-.CRIATIVOS, .THUMBS, .IDENTIDADE {
-    max-width: 30vw;
-
-    padding: 40px;
-    margin: 10px;
-    border: solid 1px #ff0054;
-    border-radius: 0px 30px 0px 30px;
-    box-shadow: 0 0 20px #ff00553a;
-}
-
-.CRIATIVOS {
-    background-image: url("img/12.png"); 
-    background-color: #14141494; 
-    background-position: fixed; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-
-} 
-
-.THUMBS {
-    background-image: url("img/12.png"); 
-    background-color: #14141494; 
-    background-position: fixed; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-}
-
-.IDENTIDADE {
-    background-image: url("img/12.png"); 
-    background-color: #14141494; 
-    background-position: fixed; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-}
-
-.h1-ar2 {
-    font-size: 3em;
-    font-weight: 700;
-    font-family: 'Ubuntu', sans-serif;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    color: #ffffff;
-}
-
-.h2-AR2 {
-    font-size: 2.5em;
-    font-weight: 700;
-    font-family: 'Ubuntu', sans-serif;
-
-    background-image: linear-gradient(90deg, #cf0448, #ff0054);
-    color: black;
-    background-clip: text;
-    -webkit-background-clip: text;
-  
-    /* Adicionado: */
-    -webkit-text-fill-color: transparent;
-
-
-    margin-bottom: 40px;
-}
-.h3-AR2 {
-    font-size: 1.52em;
-    font-weight: 500;
-    font-family: 'Ubuntu', sans-serif;
-    color: #e9e9e9;
-    margin: 20px 0px 20px 0px;
-}
-
-.ligth {
-    font-weight: 300;
-}
-
-
-.lista-AR2 {
-    text-align: center;
-    padding-left: 10px;
-}
-
-.lista-AR2 li::marker {
-    content: "🔥  ";
-}
-
-.botaoo {
-    margin: 60px;
-}
-
-
-/* ------------------- AR2 ------------------- */
-
-
-/* ------------------- AR5 ------------------- */
-.AR5 {
-    background-image: url("img/img1.png"); /* The image used */
-    background-color: #ff0054; /* Used if the image is unavailable */
-    background-position: fixed; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-    height: 30vh;
-    background-attachment: fixed;
-}
-/* ------------------- AR5 ------------------- */
-
-
-/* ------------------- RODAPÉ ------------------- */
-
-footer {
-    display: grid;
-    place-items: center;
-    background-color: rgb(34, 34, 34);
-    padding: 5vh;
-    margin: 0;
-    border-top: #ff00 solid 3px;
-}
-
-.logorodape {
-    width: 7vw;
-    user-select: none;
-    margin: 10px 0 20px 0;
-}
-
-.menurodape {
-    text-decoration: none;
-    color: white;
-    font-weight: 400;
-    font-size: 1em;
-    user-select: none;
-}
-
-.navrodape {
-    display: flex;
-    padding: 0;
-}
-.linkmenuroda {
-    text-decoration: none;
-    color: #FF0054;
-    font-weight: 300;
-    margin: 0 10px 0 10px;
-    justify-items: center;
-    list-style: none;
+.text1 p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8rem;
     font-weight: 600;
 }
 
-.direitos {
-    max-width: 40vw;
-    user-select: none;
-    text-align: center;
-    font-size: 0.7em;
-    margin: 15px 0 15px 0;
+.text1 h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 5px;
 }
 
-.redes {
+.text1 a {
+    margin-top: 20px;
+}
+
+
+.btn1 {
+    max-width: 255px;
+    color: #000;
+    background-color: transparent;
+    background-image: radial-gradient(circle,#c6e704,#c8e906);
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat'sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 19px;
     display: flex;
-    margin: 20px 0 20px 0;
-    user-select: none;
+    padding: 9px 15px;
+    text-decoration: none;
+    border: 0;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-radius: 62px;
+    width: 100%;
+    height: 47px;
+    box-shadow: 0 100px 80px rgb(195 230 2 / 32%), 0 42px 33px rgb(198 231 4 / 23%), 0 22px 18px rgb(195 230 2 / 32%), 0 13px 10px rgb(195 230 2 / 32%), 0 7px 5px rgb(195 230 2 / 32%), 0 3px 2px rgb(195 230 2 / 32%);
 }
 
-.icon {
-display: flex;
-margin: 0 10px 0 10px;
-user-select: none;
+.portf {
+    height: 400px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* ------------------- RODAPÉ ------------------- */
-
-
-
-
-/* ------------------- RESPONSIVIDADE ------------------- */
-
-@media only screen and (max-width: 900px) {
-    .AR1 {
-      display:flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 25px;
-
-      background-image: none;
-    }
-
-    .AR2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .servicos {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .CRIATIVOS, .THUMBS, .IDENTIDADE {
-        max-width: 80vw;
-    }
-    
-    #btn1 {
-        background-image: linear-gradient(45deg, #bb2a30 0%, #ff0054, #ff0054, #d52535 );
-        box-shadow: 0px 0px 40px #ff00549c;
-        font-size: 1.5em;
-        font-weight: 500;
-        padding: 30px 70px 30px 70px;
-        letter-spacing: 10px;
-    }
-
-    #btn2 {
-        background-image: linear-gradient(45deg, #bb2a30 0%, #ff0054, #ff0054, #d52535 );
-        font-size: 1.5em;
-        font-weight: 500;
-        padding: 30px 70px 30px 70px;
-        letter-spacing: 10px;
-    }
-
-    .botao-1 {
-        margin: 50px 0 50px 0;
-    }
-
-    .text1 {
-        text-align: center;
-        max-width: 85vw;
-        margin-top: -150px;
-    }
-    .img1 {
-        width: 100vw;
-        margin-top: 0px;
-    }
-
-    .h1-1 {
-        font-size: 4em;
-        text-align: justify;
-    }
-
-    .h2-1 {
-        font-size: 2.1em;
-        font-weight: 400;
-        font-family: 'Open Sans', sans-serif;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-
-    .cabeca {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: rgba(19, 19, 19, 0.342);
-        padding: 7px;
-        width: 100%;
-        position: fixed;
-        margin: 0;
-    }
-
-    .linkmenu {
-        text-decoration: none;
-        color: white;
-        font-weight: 700;
-        font-size: 1em;
-        margin-left: 10px;
-        padding: 5px;
-    }
-
-    .logocabeca {
-        width: 8vh;
-       }
-       
-    .linkinsta {
-       display: none;
-    }
-
-
-    .logorodape {
-        width: 18vw;
-        user-select: none;
-        margin: 10px 0 20px 0;
-    }
-
-    
-.direitos {
+.text2 {
     max-width: 50vw;
-    user-select: none;
-    text-align: center;
-    font-size: 0.5em;
-    margin: 15px 0 15px 0;
 }
 
-
-  }
-
-@media only screen and (max-width: 700px) {
-    .AR1 {
-      display:flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 25px;
-    }
-
-    .text1 {
-        text-align: center;
-        max-width: 80vw;
-        margin-top: -50px;
-        
-    }
-    .img1 {
-        width: 100vw;
-        margin-top: 0px;
-    }
-
-    .h1-1 {
-        font-size: 2.5em;
-        text-align: left;
-    }
-
-    .h2-1 {
-        font-size: 1.5em;
-    }
-
-    .h3-1 {
-        font-size: 1em;
-        font-weight: 400;
-        font-family: 'Open Sans', sans-serif;
-        text-align: justify;
-        margin-bottom: 10px;
-    }
-
-
-    .cabeca {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #141414e5;
-        padding: 7px;
-        width: 100%;
-        position: fixed;
-        margin: 0;
-    }
-
-    .linkmenu {
-        text-decoration: none;
-        color: white;
-        font-weight: 700;
-        font-size: 1em;
-        margin-left: 10px;
-        padding: 5px;
-    }
-
-    .logocabeca {
-        width: 8vh;
-       }
-       
-    .linkinsta {
-       display: none;
-    }
-
-    .AR2-depo {
-        display: flex;
-        place-items: center;
-        flex-direction: column;
-    }
-    .depoimentos {
-        width: 75%;
-        margin-top: 25px;
-    }
-
-    .logorodape {
-        width: 18vw;
-        user-select: none;
-        margin: 10px 0 20px 0;
-    }
-
-    
-.direitos {
-    max-width: 50vw;
-    user-select: none;
-    text-align: center;
-    font-size: 0.5em;
-    margin: 15px 0 15px 0;
+.text2 p {
+font-family: 'Montserrat', sans-serif;
+font-size: 2.8rem;
+font-weight: 600;
+text-align: center;
 }
 
-#btn1 {
-    background-image: linear-gradient(45deg, #bb2a30 0%, #ff0054, #ff0054, #d52535 );
-    box-shadow: 0px 0px 40px #ff00549c;
-    font-size: 1em;
-    font-weight: 500;
-    padding: 20px 35px 20px 35px;
-    letter-spacing: 5px;
+.exemplos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
 }
 
-#btn2 {
-    background-image: linear-gradient(45deg, #bb2a30 0%, #ff0054, #ff0054, #d52535 );
-    font-size: 1em;
-    font-weight: 500;
-    padding: 20px 35px 20px 35px;
-    letter-spacing: 5px;
+.logo-1, .logo-2,  .logo-3, .logo-4, .logo-5, .logo-6 {
+    width: 400px;
+    height: 250px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.botao-1 {
-    margin: 50px 0 50px 0;
+.logo-1 {
+    background: #ececec;
+}
+.logo-2 {
+    background: #FFAA01;
+}
+.logo-3 {
+    background: #ececec;
+}
+.logo-4 {
+    background: #281205;
+}
+.logo-5 {
+    background: #ff6500;
+}
+.logo-6 {
+    background: #0f0f0f;
 }
 
-.botao2 {
-    margin: 50px 0 50px 0;
-    width: 80vw;
+.portf .seta-down {
+    margin-top: 20px;
 }
 
-  }
+.logoo {
+    width: 250px;
+}
+.logoo:hover {
+    width: 300px;
+    transition-duration: 900ms;
+}
