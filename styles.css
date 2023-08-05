@@ -248,6 +248,9 @@ footer p {
         justify-content: none;
         align-items: center;
     }
+.inferior {
+	margin-top: 30px;
+}
     .logo {
         width: 200px;
     }
