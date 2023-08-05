@@ -224,3 +224,40 @@ footer p {
 .logo-footer {
     width: 50px;
 }
+
+
+
+/* ------------------- RESPONSIVIDADE ------------------- */
+
+/* ------------------ TABLET ------------------ */
+@media only screen and (max-width: 900px) {
+}
+
+
+/* ------------------ CELULAR ------------------ */
+@media only screen and (max-width: 700px) {
+
+    header {
+        background-image: url("img/cell.webp"); /* The image used */
+    }
+
+    .superior {
+        padding: 300px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+        align-items: center;
+    }
+    .logo {
+        width: 200px;
+    }
+    .text1 {
+        max-width: 80vw;
+    }
+    .text1 p {
+        font-size: 2rem;
+    }
+    .text1 h3 {
+        font-size: 0.9rem;
+    }
+}
