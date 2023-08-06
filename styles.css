@@ -239,8 +239,9 @@ main {
 }
 .footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     height: 27px;
     border-top: #D1F403 solid 1px;
     margin: 0 50px 0 50px;
@@ -253,7 +254,7 @@ main {
 }
 
 .logo-footer {
-    width: 50px;
+    width: 85px;
 }
 
 .arg2 {
