@@ -45,6 +45,11 @@ html body {
     }
   }
 
+/*----------------------------------------------------*/
+
+
+
+/*----------------------------------------------------*/
 
 header {
     background-image: url("img/pc.webp"); /* The image used */
@@ -79,6 +84,7 @@ header {
     animation: bounce 1s infinite alternate;
 -webkit-animation: bounce 1s infinite alternate;
 }
+
 .logo {
     width: 240px;
 }
@@ -136,8 +142,16 @@ header {
     box-shadow: 0 100px 80px rgb(195 230 2 / 32%), 0 42px 33px rgb(198 231 4 / 23%), 0 22px 18px rgb(195 230 2 / 32%), 0 13px 10px rgb(195 230 2 / 32%), 0 7px 5px rgb(195 230 2 / 32%), 0 3px 2px rgb(195 230 2 / 32%);
 }
 
-.portf {
-    height: 400px;
+.superior2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.arg1 {
+    height: 600px;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -145,32 +159,47 @@ header {
 }
 
 .text2 {
-    max-width: 50vw;
+    max-width: 30vw;
 }
 
 .text2 p {
 font-family: 'Montserrat', sans-serif;
 font-size: 2.8rem;
 font-weight: 600;
-text-align: center;
+text-align: left;
 }
 
-.exemplos {
+.text2 h3 {
+    font-weight: 300;
+    font-size: 1.1rem;
+    text-align: left;
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.text2 .bold-green {
+    text-shadow: 0px 5px 80px #c6e704bd;
+}
+
+.container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-    margin-top: 50px;
+    max-width: 500px;
 }
 
+
 .logo-1, .logo-2,  .logo-3, .logo-4, .logo-5, .logo-6 {
-    width: 400px;
-    height: 250px;
+    width: 250px;
+    height: 200px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+
+    }
 
 .logo-1 {
     background: #ececec;
@@ -179,27 +208,28 @@ text-align: center;
     background: #FFAA01;
 }
 .logo-3 {
-    background: #ececec;
+    background: #ff6500;
 }
 .logo-4 {
     background: #281205;
 }
 .logo-5 {
-    background: #ff6500;
+    background: #ececec;
 }
 .logo-6 {
     background: #0f0f0f;
 }
 
-.portf .seta-down {
+.arg1 .seta-down {
     margin-top: 20px;
 }
 
 .logoo {
-    width: 250px;
+    width: 180px;
 }
+
 .logoo:hover {
-    width: 300px;
+    width: 230px;
     transition-duration: 900ms;
 }
 
@@ -207,7 +237,7 @@ main {
     padding: 10px;
     height: 800px;
 }
-footer {
+.footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -215,14 +245,80 @@ footer {
     border-top: #D1F403 solid 1px;
     margin: 0 50px 0 50px;
     padding: 50px;
+
 }
 
-footer p {
+.footer p {
     color:rgb(127, 127, 127);
 }
 
 .logo-footer {
     width: 50px;
+}
+
+.arg2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    height: 600px;
+    padding: 180px;
+}
+
+.icon-check {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.text3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    max-width: 35vw;
+}
+
+.text3 p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-align: left;
+}
+.text3 .bold {
+    font-weight: 600;
+}
+.text3 ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.text3 li {
+    margin-top: 20px;
+}
+
+.item-lista {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.text-lista {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.text3 h2 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #d1f403;
+}
+
+.text3 h3 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    max-width: 35vw;
+    margin-top: 10px;
+    line-height: 25px;
 }
 
 
@@ -248,9 +344,9 @@ footer p {
         justify-content: none;
         align-items: center;
     }
-.inferior {
-	margin-top: 30px;
-}
+    .inferior {
+        margin-top: 30px;
+    }
     .logo {
         width: 200px;
     }
