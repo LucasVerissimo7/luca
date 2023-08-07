@@ -265,7 +265,7 @@ main {
 
     margin: 40px 0 40px 0;
 
-    background-image: url("img/bg2.png"); /* The image used */
+    background-image: url("img/bg2.webp"); /* The image used */
     background-position-x: left;
     background-position-y: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
