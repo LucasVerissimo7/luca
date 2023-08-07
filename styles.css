@@ -140,6 +140,7 @@ header {
     width: 100%;
     height: 47px;
     box-shadow: 0 100px 80px rgb(195 230 2 / 32%), 0 42px 33px rgb(198 231 4 / 23%), 0 22px 18px rgb(195 230 2 / 32%), 0 13px 10px rgb(195 230 2 / 32%), 0 7px 5px rgb(195 230 2 / 32%), 0 3px 2px rgb(195 230 2 / 32%);
+    text-align: center;
 }
 
 .superior2 {
@@ -152,7 +153,6 @@ header {
 
 .arg1 {
     height: 600px;
-    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,6 +160,7 @@ header {
 
 .text2 {
     max-width: 30vw;
+    padding: 50px;
 }
 
 .text2 p {
@@ -234,9 +235,9 @@ text-align: left;
 }
 
 main {
-    padding: 10px;
-    height: 800px;
+    padding: 0px;
 }
+
 .footer {
     display: flex;
     flex-direction: column-reverse;
@@ -260,10 +261,19 @@ main {
 .arg2 {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
 
-    height: 600px;
-    padding: 180px;
+    margin: 40px 0 40px 0;
+
+    background-image: url("img/bg2.png"); /* The image used */
+    background-position-x: left;
+    background-position-y: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.arg2 .btn1 {
+    margin: 20px 0 20px 0;
 }
 
 .icon-check {
@@ -276,6 +286,7 @@ main {
     flex-direction: column;
     justify-content: right;
     max-width: 35vw;
+    margin-left: 30vw;
 }
 
 .text3 p {
@@ -334,8 +345,14 @@ main {
 /* ------------------ CELULAR ------------------ */
 @media only screen and (max-width: 700px) {
 
+/* ------------------ Cabeçalho ------------------ */
     header {
         background-image: url("img/cell.webp"); /* The image used */
+        height: 690px;
+    }
+
+    header .btn1 {
+        max-width: 70vw;
     }
 
     .superior {
@@ -352,12 +369,98 @@ main {
         width: 200px;
     }
     .text1 {
-        max-width: 80vw;
+            max-width: 80vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
     }
     .text1 p {
         font-size: 2rem;
     }
     .text1 h3 {
         font-size: 0.9rem;
+    }
+
+/* ------------------ ARG1 ------------------ */
+    .text2 {
+        max-width: 100%;
+    }
+    .text2 p {
+        font-size: 2.1rem;
+        text-align: center;
+    }
+
+    .text2 h3 {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .superior2 {
+        flex-direction: column;
+    }
+
+    .container {
+        max-width: 90vw;
+        overflow: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    .logo-1, .logo-2,  .logo-3, .logo-4, .logo-5, .logo-6  {
+        width: 100%;
+        height: 250px;
+    }
+
+/* ------------------ ARG2 ------------------ */
+    .arg2 {
+        align-items: center;
+        background-image: none; 
+        background: #d1f4027a;
+        margin: 20px 0 20px 0;
+
+    }
+
+    .icon-check {
+        width: 20px;
+        margin-right: 10px;
+    }
+    
+    .text3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        max-width: 80vw;
+        margin-left: 0vw;
+
+        text-shadow: 1px 1px 50px #d1f403;
+    }
+
+    .text3 p{
+        margin-top: 50px;
+        font-size: 2.1rem;
+    }
+    .text3 h2 {
+        font-size: 1.8rem;
+    }
+
+    .text3 h3 {
+        font-size: 1rem;
+        max-width: 90vw;
+        margin-top: 10px;
+        line-height: 20px;
+    }
+
+    .text3 ul {
+        list-style: none;
+        margin: 30px 0 30px 0;
+
+    }
+
+
+    .footer p {
+        text-align: center;
     }
 }
