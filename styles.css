@@ -437,7 +437,7 @@ main {
 /* ------------------ ARG2 ------------------ */
     .arg2 {
         align-items: center;
-        background-image: url(img/bg3.png);
+        background-image: url(img/bg3.webp);
         margin: 20px 0 20px 0;
         background-position-x: center;
         background-position-y: top;
