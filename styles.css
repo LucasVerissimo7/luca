@@ -181,7 +181,9 @@ text-align: left;
 .text2 .bold-green {
     text-shadow: 0px 5px 80px #c6e704bd;
 }
-
+.arraste {
+    display: none;
+}
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -199,26 +201,32 @@ text-align: left;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #c5e704;
 
     }
 
 .logo-1 {
     background: #ececec;
+
 }
 .logo-2 {
     background: #FFAA01;
+
 }
 .logo-3 {
     background: #ff6500;
+
 }
 .logo-4 {
     background: #281205;
+
 }
 .logo-5 {
     background: #ececec;
+
 }
 .logo-6 {
-    background: #0f0f0f;
+    background: #c9c9c9;
 }
 
 .arg1 .seta-down {
@@ -227,11 +235,6 @@ text-align: left;
 
 .logoo {
     width: 180px;
-}
-
-.logoo:hover {
-    width: 230px;
-    transition-duration: 900ms;
 }
 
 main {
@@ -382,9 +385,18 @@ main {
     }
 
 /* ------------------ ARG1 ------------------ */
+    .arg1 {
+        margin-top: 45px;
+    }
+
     .text2 {
         max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 50px 0 50px;
     }
+
     .text2 p {
         font-size: 2.1rem;
         text-align: center;
@@ -399,7 +411,15 @@ main {
     .superior2 {
         flex-direction: column;
     }
-
+    .arraste {
+        display: block;
+        width: 180px;
+    }
+    .column-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .container {
         max-width: 90vw;
         overflow: auto;
@@ -417,10 +437,10 @@ main {
 /* ------------------ ARG2 ------------------ */
     .arg2 {
         align-items: center;
-        background-image: none; 
-        background: #d1f4027a;
+        background-image: url(img/bg3.png);
         margin: 20px 0 20px 0;
-
+        background-position-x: center;
+        background-position-y: top;
     }
 
     .icon-check {
@@ -433,7 +453,7 @@ main {
         flex-direction: column;
         justify-content: right;
         max-width: 80vw;
-        margin-left: 0vw;
+        margin: 167px 0 0 0;
 
         text-shadow: 1px 1px 50px #d1f403;
     }
