@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,6 +25,7 @@ body {
     background: rgb(19, 19, 19);
     font-family: 'SF-Regular', sans-serif;
     color: #fff;
+    margin: 0;
 }
 
 /*--------------------------- FORM -----------------------------*/
@@ -47,7 +48,7 @@ p {
     padding: 30px;
     border-radius: 8px;
     width: 300px;
-    margin-left: 10%;
+
 }
 
 form {
@@ -150,12 +151,7 @@ form .input-single input:valid ~ label {
         width: 100vw;
     }
 
-    .formulario h2 {
-        font-size: 2.5rem;
-        margin-top: 40px;
-    }
     .formulario .container {
-        margin: 40px 0;
         max-width: 90vw;
     }
     .formulario .btn {
@@ -196,6 +192,13 @@ form .input-single input:valid ~ label {
 
                 <div class="input-single">
     
+                    <input type="text" id="CLT" name="CLT" required>
+                    <label for="CLT">Tem 3 anos de CLT?</label>
+    
+                </div>
+
+                <div class="input-single">
+    
                     <input type="text" id="dependente" name="dependente" required>
                     <label for="dependente">Tem dependente?</label>
     
@@ -203,8 +206,8 @@ form .input-single input:valid ~ label {
 
                 <div class="input-single">
     
-                    <input type="text" id="CLT" name="CLT" required>
-                    <label for="CLT">Tem 3 anos de CLT?</label>
+                    <input type="text" id="renda" name="renda" required>
+                    <label for="renda">Possui renda formal? Qual o bruto?</label>
     
                 </div>
 
@@ -256,33 +259,41 @@ form .input-single input:valid ~ label {
     <script>
         document.getElementById("contactForm").addEventListener("submit", function(event) {
             event.preventDefault();
-        
+    
             // Captura dos dados do formulário
             let formData = new FormData(this);
             let dados = {};
-        
+    
             formData.forEach((value, key) => {
-                dados[key] = value;
+                if (key === "date") {
+                    // Converte a data para o formato dd/mm/aaaa
+                    let data = new Date(value);
+                    let dia = String(data.getDate()).padStart(2, '0');
+                    let mes = String(data.getMonth() + 1).padStart(2, '0');
+                    let ano = data.getFullYear();
+                    dados[key] = `${dia}/${mes}/${ano}`;
+                } else {
+                    dados[key] = value;
+                }
             });
-        
+    
             // Captura da URL da página atual
             dados.url_origem = window.location.href;
-            console.log("URL da página atual:", dados.url_origem);
-        
+    
             // Formata número para API do WhatsApp
             let telefoneFormatado = dados.telefone.replace(/\D/g, "");
             if (!telefoneFormatado.startsWith("55")) {
                 telefoneFormatado = "55" + telefoneFormatado;
             }
-        
+    
             if (telefoneFormatado.length < 12) {
                 alert("Número de telefone inválido. Verifique e tente novamente.");
                 return;
             }
-        
+    
             // Adiciona o link do WhatsApp no objeto
             dados.whatsappLink = `https://wa.me/${telefoneFormatado}`;
-        
+    
             // Dispara evento para Google Tag Manager
             window.dataLayer = window.dataLayer || [];
             window.dataLayer.push({
@@ -290,7 +301,7 @@ form .input-single input:valid ~ label {
                 'form_id': 'contactForm',
                 ...dados
             });
-        
+    
             // Dispara evento para Google Analytics 4
             if (typeof gtag === "function") {
                 gtag('event', 'form_submit', {
@@ -299,9 +310,9 @@ form .input-single input:valid ~ label {
                     'value': 1
                 });
             }
-        
+    
             console.log("Dados enviados:", dados);
-        
+    
             fetch("https://hook.us2.make.com/fi621r3kboamr14gyp8vcfcdvm21ssxf", {
                 method: "POST",
                 headers: {
@@ -328,7 +339,8 @@ form .input-single input:valid ~ label {
                 document.getElementById("responseMessage").style.color = "red";
             });
         });
-        </script>
+    </script>
+    
         
 
     <script>
