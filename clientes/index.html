@@ -331,7 +331,6 @@ form .input-single input:valid ~ label {
                 document.getElementById("responseMessage").innerText = "Mensagem enviada com sucesso!";
                 document.getElementById("responseMessage").style.color = "green";
                 document.getElementById("contactForm").reset();
-                window.location.href = "success.html";
             })
             .catch(error => {
                 console.error("Erro ao enviar:", error);
