@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Setlist</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <style>
+        @font-face {
+            font-family: 'San Francisco';
+            src: url('https://developer.apple.com/fonts/SF-Pro.ttf');
+        }
+
+        body {
+            font-family: 'San Francisco', Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #container {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .music {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .op {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input, select {
+            width: 80%;
+            margin: 5px 0;
+            padding: 8px;
+        }
+
+        input {
+            border: none;
+            border-bottom: #000 solid 2px;
+        }
+
+        select {
+            width: 70%;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 15px 0 0 0;
+        }
+
+        button {
+            padding: 1.5% 3%;
+            cursor: pointer;
+            border: none;
+            background-color: #0071e3;
+            color: white;
+            transition: 300ms;
+            font-weight: 600;
+        }
+
+        button:hover {
+            background-color: #025cb6;
+            transition: 300ms;
+        }
+
+        .music button {
+            background-color: #ed1515;
+            padding: 7px 10px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        textarea:focus, input:focus, select:focus {
+            box-shadow: 0 0 0 0;
+            outline: 0;
+        } 
+
+        @media (max-width: 480px) {
+            .music {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>Lista de Hinos</h2>
+        <div id="song-list"></div>
+        <button onclick="addSong()">Adicionar Música</button>
+        <button onclick="generatePDF()">Gerar Setlist</button>
+    </div>
+    
+    <script>
+        function addSong() {
+            const div = document.createElement("div");
+            div.classList.add("music");
+            div.innerHTML = `
+                <input type="text" placeholder="Nome da Música" required>
+                <div class="op">
+                <select>
+                    <option value="C ou Am">C ou Am</option>
+                    <option value="C# ou A#m">C# ou A#m</option>
+                    <option value="D ou Bm">D ou Bm</option>
+                    <option value="D# ou Cm">D# ou Cm</option>
+                    <option value="E ou C#m">E ou C#m</option>
+                    <option value="F ou Dm">F ou Dm</option>
+                    <option value="F# ou D#m">F# ou D#m</option>
+                    <option value="G ou Em">G ou Em</option>
+                    <option value="G# ou Fm">G# ou Fm</option>
+                    <option value="A ou F#m">A ou F#m</option>
+                    <option value="A# ou Gm">A# ou Gm</option>
+                    <option value="B ou G#m">B ou G#m</option>
+                </select>
+                <button onclick="this.parentElement.remove()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-x-lg" viewBox="0 0 16 16">
+  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+</svg></button>
+</div>
+            `;
+            document.getElementById("song-list").appendChild(div);
+        }
+
+        function generatePDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF({ orientation: "landscape" });
+
+            doc.setFont("helvetica", "bold");
+
+            const songs = document.querySelectorAll(".music");
+            let songList = [];
+
+            songs.forEach((div) => {
+                const songName = div.querySelector("input").value;
+                const songKey = div.querySelector("select").value;
+                if (songName.trim() !== "") {
+                    songList.push(`${songName} - Tom: ${songKey}`);
+                }
+            });
+
+            if (songList.length === 0) {
+                alert("Adicione músicas antes de gerar o PDF!");
+                return;
+            }
+
+            let pageWidth = doc.internal.pageSize.getWidth();
+            let pageHeight = doc.internal.pageSize.getHeight();
+            let margin = 10;
+            let cellWidth = (pageWidth - margin * 3) / 2;
+            let cellHeight = (pageHeight - margin * 3) / 2;
+            let index = 0;
+
+            while (index < songList.length) {
+                for (let row = 0; row < 2; row++) {
+                    for (let col = 0; col < 2; col++) {
+                        if (index >= songList.length) break;
+
+                        let x = margin + col * (cellWidth + margin);
+                        let y = margin + row * (cellHeight + margin);
+
+                        doc.setFillColor(240, 240, 240);
+                        doc.rect(x, y, cellWidth, cellHeight, "F");
+
+                        let wrappedText = doc.splitTextToSize(songList.join("\n"), cellWidth - 10);
+                        doc.setTextColor(0, 0, 0);
+                        doc.setFontSize(12);
+                        doc.text(wrappedText, x + 5, y + 10);
+
+                        index++;
+                    }
+                }
+                if (index < songList.length) doc.addPage();
+            }
+
+            doc.save("Lista de Hinos.pdf");
+        }
+    </script>
+</body>
+</html>
