@@ -39,7 +39,7 @@
         input, select {
             width: 80%;
             margin: 5px 0;
-
+            padding: 8px;
         }
 
         input {
@@ -53,12 +53,11 @@
             background-color: black;
             color: white;
             border-radius: 15px 0 0 0;
-            padding: 8px;
+            height: 3.5vh;
         }
 
         button {
-            padding: 8px;
-        
+            padding: 1.5% 3%;
             cursor: pointer;
             border: none;
             background-color: #0071e3;
@@ -86,6 +85,10 @@
         @media (max-width: 480px) {
             .music {
                 flex-direction: column;
+            }
+
+            select {
+                height: 5vh;
             }
         }
 
@@ -120,7 +123,7 @@
                     <option value="A# ou Gm">A# ou Gm</option>
                     <option value="B ou G#m">B ou G#m</option>
                 </select>
-                <button onclick="this.parentElement.remove()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <button onclick="this.closest('.music').remove()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-x-lg" viewBox="0 0 16 16">
   <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
 </svg></button>
 </div>
